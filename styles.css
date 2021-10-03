@@ -1,0 +1,63 @@
+.cursive{
+  font-family: 'Engagement', cursive !important;
+}
+.pacifico{
+  font-family: 'Pacifico', cursive;
+}
+
+.blue{
+  color: #00a8e8;
+}
+
+.purple{
+  color: #682ae9;
+}
+
+
+.bg-Blue{
+  background-color: #00a8e8;
+}
+
+.bg-blueGrad{
+  background-image: linear-gradient(black, #00a8e8);
+}
+
+
+body{
+  font-family: 'Delius Swash Caps', cursive;
+  overflow-x: hidden;
+
+}
+
+#title{
+  transform:rotateX(360deg) translateZ(30px)
+}
+
+.test{
+  animation: rotate 4s ease-in infinite;
+}
+
+@keyframes rotate {
+  0%{
+    transform:rotateX(0deg)
+  }
+  25%{
+    transform:rotateX(90deg)
+  }
+}
+/* .container{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+section{
+  min-width: 100%;
+  height: auto;
+  display: flex;
+} */
+
+
+  /* #section2{
+    width: 600% !important;
+  } */
