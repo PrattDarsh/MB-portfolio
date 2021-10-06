@@ -12,14 +12,16 @@
 .purple{
   color: #682ae9;
 }
-
+.bg-purple{
+  background-color: #682ae9;
+}
 
 .bg-Blue{
   background-color: #00a8e8;
 }
 
-.bg-blueGrad{
-  background-image: linear-gradient(black, #00a8e8);
+.bg-purpleGrad{
+  background-image: linear-gradient(black, #682ae9);
 }
 
 
@@ -27,6 +29,14 @@ body{
   font-family: 'Delius Swash Caps', cursive;
   overflow-x: hidden;
 
+}
+
+.bgPaper{
+  background-color: #FFE8A9;
+}
+
+.btn{
+  border-radius: 60% 90% 60% 90%;
 }
 
 #title{
