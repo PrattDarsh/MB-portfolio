@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Engagement&family=Tillana&display=swap" rel="stylesheet">
+    <title>Training</title>
+</head>
+
+<body class="bg-black">
+
+    <section class="h-screen max-w-6xl mx-auto">
+        <div class="relative z-50 py-32 ml-2 top-12 compass">
+            <div class="fixed w-px h-96 bg-gradient-to-t from-red-500 to yellow-100 line"></div>
+            <div class="fixed bottom-2 progressbar">
+                <div class="absolute p-1 bg-red-500 rounded-full -top-2 -left-1"></div>
+                <div class="w-px h-96 bg-gradient-to-b from-gray-100 to gray-400"></div>
+            </div>
+
+        </div>
+        <div class="ml-4 md:ml-12">
+            <div class="absolute top-1/3 md:top-1/2" id="block1 ">
+                <h1 class="mb-4 text-4xl text-red-500 md:text-8xl cursive header">Corporate training</h1>
+
+            </div>
+
+    </section>
+    <section class="relative h-screen max-w-6xl mx-auto text-white " id="fluid">
+        <img src="images/smelling_flowers.png" class="absolute max-w-xs md:max-w-md bottom-12 -right-32 ilus1" alt="">
+        <img src="images/Under_tree.png" class="absolute max-w-xs md:max-w-md bottom-12 -left-56 ilus2" alt="">
+        <img src="images/sitting_at_window.png" class="absolute max-w-xs md:max-w-md bottom-12 -right-32 ilus3" alt="">
+        <!-- <img src="images/smelling_flowers.png" class="absolute max-w-xs md:max-w-md bottom-12 -right-32 ilus4" alt=""> -->
+
+
+        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point1 top-1/3 md:top-1/2">
+            <p class="">Transformative training
+            </p>
+            <p class="mt-2 text-xl text-gray-400 point1"> Training in the corporate sector can be anything but
+                traditional. With a solid background in innovation and entrepreneurship she brings an empathetic and
+                differentiated approach to training. Some of her training programmes include:
+            </p>
+        </div>
+
+        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point2 top-1/3 md:top-1/2">
+            <p class="">For first-time managers
+            </p>
+            <p class="mt-2 text-xl text-gray-400 point2">
+                A two-month long training/mentoring programme for first-time-managers at ABS pvt. ltd., Mumbai.
+            </p>
+
+        </div>
+
+
+        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point3 top-1/3 md:top-1/2">
+            <p class="">Negotiation for sales team
+            </p>
+            <p class="mt-2 text-xl text-gray-400 point3">A day-long workshop on the fundamentals of negotiation with the
+                sales leadership team of ABS pvt. ltd., Mumbai.
+
+
+            </p>
+        </div>
+
+        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point4 top-1/3 md:top-1/2">
+            <p class="">Design Thinking for aspiring entrepreneurs
+            </p>
+            <p class="mt-2 text-xl text-gray-400 point4">At the entrepreneur cell at NIT-Trichy.
+
+            </p>
+        </div>
+        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 top-1/3 md:top-1/2 pointX">
+            <p class="text-4xl text-red-500 cursive md:text-8xl">Webinars</p>
+        </div>
+        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point5 top-1/3 md:top-1/2">
+            <p class="">Well-being for corporates & entrepreneurs
+
+            </p>
+            <p class="mt-2 text-xl text-gray-400 point5">Online webinar on well-being at KNAV, Mumbai, for MBA students
+                at Vangaurd University, Bangalore, and for entrepreneurs from across the globe with Social Innovation
+                Booster, California.
+
+
+            </p>
+        </div>
+        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point6 top-1/3 md:top-1/2">
+            <p class="">Innovation and Design Thinking
+
+            </p>
+            <p class="mt-2 text-xl text-gray-400 point6">A webinar on what innovation is about and the fundamentals of
+                design thinking for over 600 participants at Sri Eshwar College of Engineering, Coimbatore.
+            </p>
+        </div>
+    </section>
+
+
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="anime.js"></script>
+    <script>
+        tl.to('.point4', { opacity: 0, y: -200 })
+        tl.to('.ilus2', { opacity: 0, x: 30 })
+        tl.from('.pointX', { opacity: 0 })
+        tl.from('.ilus3', { opacity: 0, x: 30 }, '-=0.5')
+        tl.to('.pointX', { opacity: 0, y: -200 })
+        tl.from('.point5', { opacity: 0 })
+        tl.to('.point5', { opacity: 0, y: -200 })
+        tl.from('.point6', { opacity: 0 })
+    </script>
+
+</body>
+
+</html>

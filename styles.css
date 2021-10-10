@@ -1,9 +1,7 @@
 .cursive{
   font-family: 'Engagement', cursive !important;
 }
-.pacifico{
-  font-family: 'Pacifico', cursive;
-}
+
 
 .blue{
   color: #00a8e8;
@@ -26,9 +24,12 @@
 
 
 body{
-  font-family: 'Delius Swash Caps', cursive;
+  font-family: 'Tillana', cursive;
   overflow-x: hidden;
 
+}
+.ephesis{
+  font-family: 'Ephesis', cursive;
 }
 
 .bgPaper{
