@@ -28,7 +28,7 @@
 
 
     <section id="section1">
-        <div class="flex items-center justify-center max-w-6xl py-32 ">
+        <div class="flex items-center justify-center max-w-6xl mx-auto ">
             <div class="max-w-lg img1"><img src="images/reading_book.png" alt=""></div>
             <div class="text-3xl text-white pt1">Holds a master's in <span class="italic">Innovation
                     &
@@ -40,7 +40,7 @@
     </section>
     <section id="section2">
         <div class="flex justify-end">
-            <div class="flex items-center justify-center max-w-6xl py-32">
+            <div class="flex items-center justify-center max-w-6xl mx-auto">
 
                 <div class="text-3xl text-left text-white pt2">And has a certification in <span
                         class="italic">Design<br>
@@ -61,32 +61,31 @@
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '#section1',
-                // start: 'top center',
+                start: 'top center',
                 toggleActiopns: "play none none pause",
                 // end: '+=500'
-                pin: true,
-                pinSpacing: false,
+
                 scrub: true
             }
         })
-        tl.from('.img1', { opacity: 0, x: -30 })
-        tl.from('.pt1', { opacity: 0, y: 30 }, '-=0.5')
+        tl.from('.img1', { opacity: 0, x: -100 })
+        tl.from('.pt1', { opacity: 0, scale: 0.5 }, '-=0.5')
         tl.to('.img1', { opacity: 0, x: -30 })
         tl.to('.pt1', { opacity: 0, y: -30 }, '-=0.5')
 
         let tl2 = gsap.timeline({
             scrollTrigger: {
                 trigger: '#section2',
-                // start: 'top center',
+                start: 'top center',
                 toggleActiopns: "play none none pause",
                 // end: '+=500'
-                pin: true,
+                // pin: true,
                 // pinSpacing: false,
                 scrub: true
             }
         })
-        tl2.from('.img2', { opacity: 0, x: 30 })
-        tl2.from('.pt2', { opacity: 0, y: 30 }, '-=0.5')
+        tl2.from('.img2', { opacity: 0, x: 100 })
+        tl2.from('.pt2', { opacity: 0, x: -100 }, '-=0.5')
         tl2.to('.img2', { opacity: 0, x: 30 })
         tl2.to('.pt2', { opacity: 0, y: -30 }, '-=0.5')
     </script>
