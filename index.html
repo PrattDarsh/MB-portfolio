@@ -17,7 +17,7 @@
     <title>Meenakshi Babu</title>
 </head>
 
-<body class="bg-black lg:px-32">
+<body class="bg-black ">
 
     <section id="landing">
         <div class="flex items-center justify-center max-w-6xl py-32 mx-auto">
@@ -30,27 +30,66 @@
     <section id="section1">
         <div class="flex items-center justify-center max-w-6xl mx-auto ">
             <div class="max-w-lg img1"><img src="images/reading_book.png" alt=""></div>
-            <div class="text-3xl text-white pt1">Holds a master's in <span class="italic">Innovation
-                    &
-                    Entrepreneurship</span> from <span class="font-bold purple">HEC Paris.</span>
+            <div class="space-y-12 text-3xl text-white">
+                <p class="pt1"> Holds a master's in <span class="italic">Innovation
+                        &
+                        Entrepreneurship</span> from <span class="font-bold purple">HEC Paris.</span></p>
+                <p class="pt1x">And has a certification in <span class="italic">Design
+                        Thinking</span> from
+                    <span class="font-bold purple">Stanford
+                        d.school.</span> and <span class="font-bold purple">HEC Paris.
+                </p>
             </div>
-
 
         </div>
     </section>
     <section id="section2">
-        <div class="flex justify-end">
-            <div class="flex items-center justify-center max-w-6xl mx-auto">
 
-                <div class="text-3xl text-left text-white pt2">And has a certification in <span
-                        class="italic">Design<br>
-                        Thinking</span> from
-                    <span class="font-bold purple">Stanford
-                        d.school.</span>
-                </div>
-                <div class="max-w-lg img2"><img src="images/teaching_kids.png" alt=""></div>
+        <div class="flex items-center justify-center max-w-6xl mx-auto">
+
+            <div class="text-3xl text-left text-white pt2">Co-founded
+                </span><span class="purple">Yugen Education
+                    Foundation, a social enterprise.</span>
             </div>
+            <div class="max-w-lg img2"><img src="images/Heart.png" alt=""></div>
+
         </div>
+
+
+    </section>
+    <section id="section3">
+
+        <div class="flex items-center justify-center max-w-6xl mx-auto">
+            <div class="max-w-lg img3"><img src="images/brain cell-01.png" alt=""></div>
+            <div class="text-3xl text-left text-white pt3">Has <span class="font-bold purple">over 17
+                    years</span> of
+                experience as an educator, including teaching at
+                <span class="italic"> B-Schools</span>
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <section id="section4">
+
+        <div class="flex items-center justify-center max-w-6xl mx-auto">
+
+            <div class="text-3xl text-left text-white pt4">Is a <span class="font-bold purple">strategy
+                    and
+                    innovation</span>
+                consultant & trains <span class="italic">corporates</span> and <span class="italic">
+                    entrepreneurs.</span>
+            </div>
+            <div class="max-w-lg img4"><img src="images/smelling_flowers.png" alt=""></div>
+
+        </div>
+
+
+    </section>
+    <section id="" class="py-32 mt-32 bg-gray-700">
+
 
     </section>
 
@@ -69,9 +108,12 @@
             }
         })
         tl.from('.img1', { opacity: 0, x: -100 })
-        tl.from('.pt1', { opacity: 0, scale: 0.5 }, '-=0.5')
+        tl.from('.pt1', { opacity: 0, x: 100 }, '-=0.5')
+        tl.from('.pt1x', { opacity: 0, x: 100 }, '-=0.1')
+
         tl.to('.img1', { opacity: 0, x: -30 })
         tl.to('.pt1', { opacity: 0, y: -30 }, '-=0.5')
+
 
         let tl2 = gsap.timeline({
             scrollTrigger: {
@@ -84,10 +126,42 @@
                 scrub: true
             }
         })
-        tl2.from('.img2', { opacity: 0, x: 100 })
-        tl2.from('.pt2', { opacity: 0, x: -100 }, '-=0.5')
+        tl2.from('.img2', { opacity: 0, scale: 1.5 })
+        tl2.from('.pt2', { opacity: 0, scale: 0.5 }, '-=0.5')
         tl2.to('.img2', { opacity: 0, x: 30 })
         tl2.to('.pt2', { opacity: 0, y: -30 }, '-=0.5')
+
+        let tl3 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#section3',
+                start: 'top center',
+                toggleActiopns: "play none none pause",
+                // end: '+=500'
+                // pin: true,
+                // pinSpacing: false,
+                scrub: true
+            }
+        })
+        tl3.from('.img3', { opacity: 0, scale: 0.5 })
+        tl3.from('.pt3', { opacity: 0, scale: 1.5 }, '-=0.5')
+        tl3.to('.img3', { opacity: 0, x: 30 })
+        tl3.to('.pt3', { opacity: 0, y: -30 }, '-=0.5')
+
+        let tl4 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#section4',
+                start: 'top center',
+                toggleActiopns: "play none none pause",
+                // end: '+=500'
+                // pin: true,
+                // pinSpacing: false,
+                scrub: true
+            }
+        })
+        tl4.from('.img4', { opacity: 0, y: -200 })
+        tl4.from('.pt4', { opacity: 0, y: 200 }, '-=0.5')
+        tl4.to('.img4', { opacity: 0, x: 30 })
+        tl4.to('.pt4', { opacity: 0, y: -30 }, '-=0.5')
     </script>
 </body>
 
