@@ -39,10 +39,14 @@
                     <span class="font-bold purple">Stanford
                         d.school.</span>
                 </p>
+
             </div>
 
         </div>
     </section>
+    <div class="flex justify-end max-w-6xl mx-auto animate-bounce"><img src="images/arrow_left.svg"
+            class="h-32 transform rotate-12" alt="">
+    </div>
     <section id="section2">
 
         <div class="flex items-center justify-center max-w-6xl mx-auto">
@@ -57,6 +61,8 @@
 
 
     </section>
+    <div class="max-w-6xl mx-auto animate-bounce"><img src="images/arrow.svg" class="h-32 transform rotate-12" alt="">
+    </div>
     <section id="section3">
 
         <div class="flex items-center justify-center max-w-6xl mx-auto">
@@ -72,6 +78,9 @@
 
 
     </section>
+    <div class="flex justify-end max-w-6xl mx-auto animate-bounce"><img src="images/arrow_left.svg"
+            class="h-32 transform rotate-12" alt="">
+    </div>
     <section id="section4">
 
         <div class="flex items-center justify-center max-w-6xl mx-auto">
@@ -88,7 +97,25 @@
 
 
     </section>
-    <section id="" class="py-32 mt-32 bg-gray-700">
+    <div class="max-w-6xl mx-auto animate-bounce"><img src="images/arrow.svg" class="h-32 transform rotate-12" alt="">
+    </div>
+    <section id="section5">
+
+        <div class="flex items-center justify-center max-w-6xl mx-auto">
+            <div class="max-w-lg img5"><img src="images/book.svg" alt=""></div>
+
+            <div class="text-3xl text-left text-white pt5">Is a <span class="font-bold purple">strategy
+                    and
+                    innovation</span>
+                consultant & trains <span class="italic">corporates</span> and <span class="italic">
+                    entrepreneurs.</span>
+            </div>
+
+        </div>
+
+
+    </section>
+    <section id="" class="py-32 mt-32 bg-gradient-to-b from-black to-purple-500">
 
 
     </section>
@@ -162,6 +189,22 @@
         tl4.from('.pt4', { opacity: 0, y: 200 }, '-=0.5')
         tl4.to('.img4', { opacity: 0, x: 30 })
         tl4.to('.pt4', { opacity: 0, y: -30 }, '-=0.5')
+
+        let tl5 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#section5',
+                start: 'top center',
+                toggleActiopns: "play none none pause",
+                // end: '+=500'
+                // pin: true,
+                // pinSpacing: false,
+                scrub: true
+            }
+        })
+        tl5.from('.img5', { opacity: 0, x: -200, rotate: -45 })
+        tl5.from('.pt5', { opacity: 0, y: 200 }, '-=0.5')
+        tl5.to('.img5', { opacity: 0, x: -200, rotate: 45 })
+        tl5.to('.pt5', { opacity: 0, y: -30 }, '-=0.5')
     </script>
 </body>
 
