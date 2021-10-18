@@ -55,7 +55,7 @@
     <!-- <div class="flex justify-end max-w-6xl mx-auto animate-bounce"><img src="images/arrow_left.svg"
             class="h-32 transform rotate-12" alt="">
     </div> -->
-    <section id="section2" class="">
+    <section id="section2" class="py-12">
 
         <div class="relative items-center justify-center max-w-6xl mx-auto md:flex">
             <img src="images/dandelion.svg" class="absolute top-0 h-20 transform -rotate-45 left-12 dandy" alt="">
@@ -109,7 +109,7 @@
     </div> -->
     <section id="section3">
 
-        <div class="relative flex items-center justify-center max-w-6xl mx-auto">
+        <div class="relative items-center justify-center max-w-6xl mx-auto md:flex">
             <img src="images/petal.svg" class="absolute bottom-0 right-0 h-56 petal" alt="">
             <div class="max-w-md img3"><img src="images/brain cell-01.png" alt=""></div>
             <div class="text-3xl text-left text-white pt3">Has <span class="font-bold purple">over 17
@@ -133,7 +133,7 @@
     </div> -->
     <section id="section4">
 
-        <div class="relative flex items-center justify-center max-w-6xl mx-auto">
+        <div class="relative items-center justify-center max-w-6xl mx-auto md:flex">
             <img src="images/butterfly.svg" class="absolute left-0 h-16 transform rotate-45 bottom-32 fly" alt="">
             <img src="images/butterfly.svg" class="absolute h-16 transform rotate-45 left-12 bottom-12 fly" alt="">
             <div class="text-3xl text-left text-white pt4">Is a <span class="font-bold purple">strategy
@@ -157,7 +157,9 @@
     </div> -->
     <section id="section5">
 
-        <div class="flex items-center justify-center max-w-6xl mx-auto">
+        <div class="relative items-center justify-center max-w-6xl mx-auto md:flex">
+            <img src="images/star.svg" class="absolute h-12 bottom-12 right-12 star" alt="">
+            <img src="images/star.svg" class="absolute h-12 bottom-2 right-32 star" alt="">
             <div class="max-w-lg img5 "><a href=""><img src="images/book.svg"
                         class="transition transform delay-15 rounded-xl hover:rotate-12" alt=""></a></div>
 
@@ -179,7 +181,7 @@
 
             </div>
 
-            <div class="flex space-x-32 transition transform -rotate-6 hover:rotate-1 delay-15 testimonial">
+            <div class="transition transform md:space-x-32 md:flex -rotate-6 hover:rotate-1 delay-15 testimonial">
                 <div class=""><svg xmlns="http://www.w3.org/2000/svg" id="comma" class="h-32 fill-current purple"
                         viewBox="0 0 24 24">
                         <path
@@ -195,7 +197,8 @@
                     consequuntur laboriosam perspiciatis illo iste facilis nam eveniet nesciunt sequi assumenda eius
                     dignissimos libero deleniti dicta beatae?</div>
             </div>
-            <div class="flex space-x-32 transition transform rotate-6 hover:rotate-1 delay-15 testimonial">
+
+            <div class="transition transform md:space-x-32 md:flex rotate-6 hover:rotate-1 delay-15 testimonial">
                 <div class="text-3xl text-white" id="comment2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Sit culpa,
                     veritatis
@@ -212,11 +215,25 @@
                 </div>
 
             </div>
-            <div class=""><button onclick="nextslide()"><svg xmlns="http://www.w3.org/2000/svg"
-                        class="h-12 text-white fill-current hover:text-indigo-600" viewBox="0 0 24 24">
-                        <path
-                            d="M10.024 4h6.015l7.961 8-7.961 8h-6.015l7.961-8-7.961-8zm-10.024 16h6.015l7.961-8-7.961-8h-6.015l7.961 8-7.961 8z" />
-                    </svg></button></div>
+
+        </div>
+        <div class="flex items-center justify-center space-x-12">
+            <button
+                class="flex items-center px-6 py-6 mt-12 space-x-2 transition transform border-2 border-white rounded-full prevBtn delay-15 hover:rotate-1 -rotate-6 group"
+                onclick="prevslide()"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="h-12 text-gray-500 transform rotate-180 fill-current group-hover:text-indigo-600"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M10.024 4h6.015l7.961 8-7.961 8h-6.015l7.961-8-7.961-8zm-10.024 16h6.015l7.961-8-7.961-8h-6.015l7.961 8-7.961 8z" />
+                </svg><span class="text-4xl text-gray-500 group-hover:text-white">prev</span></button>
+            <button
+                class="flex items-center px-6 py-6 mt-12 space-x-2 transition transform border-2 border-white rounded-full delay-15 hover:-rotate-1 rotate-6 group"
+                onclick="nextslide()"><span class="text-4xl text-gray-500 group-hover:text-white">next</span><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-12 text-gray-500 fill-current group-hover:text-indigo-600" viewBox="0 0 24 24">
+                    <path
+                        d="M10.024 4h6.015l7.961 8-7.961 8h-6.015l7.961-8-7.961-8zm-10.024 16h6.015l7.961-8-7.961-8h-6.015l7.961 8-7.961 8z" />
+                </svg></button>
         </div>
 
     </section>
@@ -291,7 +308,7 @@
         let tl4 = gsap.timeline({
             scrollTrigger: {
                 trigger: '#section4',
-                start: 'top bottom',
+                start: 'top center',
                 toggleActions: "play none none pause",
                 // end: '+=500'
                 // pin: true,
@@ -299,8 +316,8 @@
                 scrub: true
             }
         })
-        tl4.from('.img4', { opacity: 0, x: -30, ease: 'bounce' })
-        tl4.from('.pt4', { opacity: 0, y: 20, scale: 10 }, '-=0.5')
+        tl4.from('.img4', { opacity: 0, x: -100, ease: 'elastic' })
+        tl4.from('.pt4', { opacity: 0, x: -100 }, '-=0.5')
         tl4.to('.fly', { x: 200, y: -200 }, '-=0.2')
         tl4.to('.img4', { opacity: 0, x: 30 })
         tl4.to('.pt4', { opacity: 0, y: -30 }, '-=0.5')
@@ -318,7 +335,9 @@
         })
         tl5.from('.img5', { opacity: 0, x: -200, rotate: -45 })
         tl5.from('.pt5', { opacity: 0, x: 100, y: 100 }, '-=0.5')
-        tl5.to('.img5', { opacity: 0, x: -200, rotate: -45 })
+        tl5.from('.star', { opacity: 0 }, '-=0.5')
+        tl5.to('.img5', { opacity: 0, x: -200, rotate: -45, })
+        tl5.to('.star', { x: -200, rotate: 180 }, '-=0.9')
         tl5.to('.pt5', { opacity: 0, y: -30 }, '-=0.5')
 
         // ---------------------------------------------section6 testimonial----------------------------------------
@@ -336,12 +355,12 @@
         tl6.from('.testimonialHeader', { opacity: 0, }, '-=1')
         tl6.from('.testimonialLine', { scale: 0 }, '-=0.5')
 
-        // let changeSlide = gsap.timeline().pause()
+        let showprev = gsap.timeline().pause()
 
-        // changeSlide.to('.testimonial', { opacity: 0, x: -30, stagger: 0.5, ease: 'elastic', onComplete: () => hide() })
+        showprev.from('.prevBtn', { opacity: 0, rotate: 45, })
         // changeSlide.from('.testimonial2', { opacity: 0, x: 30, stagger: 0.5, ease: 'elastic' })
         function nextslide() {
-            // changeSlide.play()
+            showprev.play()
             document.getElementById('comma').classList.remove('purple')
             document.getElementById('comma').classList.add('text-yellow-400')
             document.getElementById('comma2').classList.remove('purple')
@@ -355,6 +374,20 @@
             // alert('hello')
         }
 
+        function prevslide() {
+            showprev.reverse()
+            document.getElementById('comma').classList.add('purple')
+            document.getElementById('comma').classList.remove('text-yellow-400')
+            document.getElementById('comma2').classList.add('purple')
+            document.getElementById('comma2').classList.remove('text-yellow-400')
+            document.getElementById('name1').innerText = "Amitabh bacchan"
+            document.getElementById('desig1').innerText = "Actor"
+            document.getElementById('comment1').innerText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa, veritatis nihil odit consequuntur laboriosam perspiciatis illo iste facilis nam eveniet nesciunt sequi assumenda eius dignissimos libero deleniti dicta beatae?"
+            document.getElementById('name2').innerText = "Aamir Khan"
+            document.getElementById('desig2').innerText = "Another Actor"
+            document.getElementById('comment2').innerText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa, veritatis nihil odit consequuntur laboriosam perspiciatis illo iste facilis nam eveniet nesciunt sequi assumenda eius dignissimos libero deleniti dicta beatae? "
+            // alert('hello')
+        }
     </script>
 </body>
 
