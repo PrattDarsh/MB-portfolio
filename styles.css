@@ -6,7 +6,15 @@
 .blue{
   color: #00a8e8;
 }
+::-webkit-scrollbar {
+  width: 5px;
+  background: black;
+}
 
+::-webkit-scrollbar-thumb {
+  background: #682ae9;
+  box-shadow: 0 -100vh 0 100vh #682ae9;
+}
 .purple{
   color: #682ae9;
 }
