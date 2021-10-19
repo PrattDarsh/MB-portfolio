@@ -18,11 +18,56 @@
 </head>
 
 <body class="bg-black ">
+    <div class="fixed z-50 w-full bg-black">
+        <div class="flex items-center justify-between max-w-6xl py-8 mx-auto">
+            <div class="text-3xl text-white">Logo</div>
+            <button onclick="showMenu()" class="relative" id="bars">
+                <div class="space-y-3 transition delay-75 transform cursor-pointer group hover:rotate-180 menuBars">
+                    <div class="w-12 h-1 transform bg-white line1"></div>
+                    <div class="w-12 h-1 transform bg-white line2"></div>
 
+                </div>
+
+            </button>
+
+            <div class="hidden space-x-6 md:flex "><svg xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 text-white transition fill-current hover:text-indigo-600 delay-15" viewBox="0 0 24 24">
+                    <path
+                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                </svg><svg xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 text-white transition fill-current hover:text-indigo-600 delay-15" viewBox="0 0 24 24">
+                    <path
+                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                </svg>
+
+            </div>
+        </div>
+        <div class="hidden my-32 space-y-32 text-4xl text-center text-white" id="menuTray">
+            <div class="menuItems">Menu Item 1</div>
+            <div class="menuItems">Menu Item 2</div>
+            <div class="menuItems">Menu Item 3</div>
+            <div class="flex items-center justify-center space-x-6 md:hidden menuItems"><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 text-white transition fill-current hover:text-indigo-600 delay-15" viewBox="0 0 24 24">
+                    <path
+                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                </svg><svg xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 text-white transition fill-current hover:text-indigo-600 delay-15" viewBox="0 0 24 24">
+                    <path
+                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                </svg>
+
+            </div>
+
+        </div>
+
+        <div class="flex self-end h-px bg-white whiteLine"></div>
+    </div>
     <section id="landing">
         <div class="items-end justify-center max-w-6xl py-32 mx-auto space-x-4 md:flex">
             <div class=""><img src="images/meena.jpeg"
-                    class="max-w-md transform border-indigo-600 landing md:max-w-4xl rotate-6" alt="">
+                    class="max-w-md transform border-indigo-600 rounded-tl-full rounded-br-full landing md:max-w-4xl rotate-6"
+                    alt="">
             </div>
             <div class="text-left ">
                 <div class="text-6xl purple md:text-8xl title"> Meenakshi Babu.</div>
@@ -43,8 +88,8 @@
 
         <div class="relative items-center justify-center max-w-6xl mx-auto md:flex ">
 
-            <img src="images/circle.svg" class="absolute top-0 z-50 h-32 right-32 circle" alt="">
-            <img src="images/semi_circle.svg" class="absolute z-50 h-32 bottom-12 right-56 circle" alt="">
+            <img src="images/circle.svg" class="absolute top-0 z-40 h-32 right-32 circle" alt="">
+            <img src="images/semi_circle.svg" class="absolute z-40 h-32 bottom-12 right-56 circle" alt="">
             <div class="max-w-lg img1"><img src="images/reading_book.png" alt=""></div>
             <div class="space-y-12 text-3xl text-white">
                 <p class="pt1"> Holds a master's in <span class="italic">Innovation
@@ -231,18 +276,18 @@
         </div>
         <div class="flex items-center justify-center space-x-12">
             <button
-                class="flex items-center px-6 py-6 mt-12 space-x-2 transition transform border-2 border-white rounded-full prevBtn delay-15 hover:rotate-1 -rotate-6 group"
+                class="flex items-center px-4 py-4 mt-12 space-x-2 transition transform border-2 border-white rounded-full prevBtn delay-15 hover:rotate-1 -rotate-6 group"
                 onclick="prevslide()"><svg xmlns="http://www.w3.org/2000/svg"
-                    class="h-12 text-gray-500 transform rotate-180 fill-current group-hover:text-indigo-600"
+                    class="h-10 text-gray-500 transform rotate-180 fill-current group-hover:text-indigo-600"
                     viewBox="0 0 24 24">
                     <path
                         d="M10.024 4h6.015l7.961 8-7.961 8h-6.015l7.961-8-7.961-8zm-10.024 16h6.015l7.961-8-7.961-8h-6.015l7.961 8-7.961 8z" />
-                </svg><span class="text-4xl text-gray-500 group-hover:text-white">prev</span></button>
+                </svg><span class="text-3xl text-gray-500 group-hover:text-white">prev</span></button>
             <button
-                class="flex items-center px-6 py-6 mt-12 space-x-2 transition transform border-2 border-white rounded-full delay-15 hover:-rotate-1 rotate-6 group"
-                onclick="nextslide()"><span class="text-4xl text-gray-500 group-hover:text-white">next</span><svg
+                class="flex items-center px-4 py-4 mt-12 space-x-2 transition transform border-2 border-white rounded-full nextBtn delay-15 hover:-rotate-1 rotate-6 group"
+                onclick="nextslide()"><span class="text-3xl text-gray-500 group-hover:text-white">next</span><svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-12 text-gray-500 fill-current group-hover:text-indigo-600" viewBox="0 0 24 24">
+                    class="h-10 text-gray-500 fill-current group-hover:text-indigo-600" viewBox="0 0 24 24">
                     <path
                         d="M10.024 4h6.015l7.961 8-7.961 8h-6.015l7.961-8-7.961-8zm-10.024 16h6.015l7.961-8-7.961-8h-6.015l7.961 8-7.961 8z" />
                 </svg></button>
@@ -259,6 +304,7 @@
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script>
+        gsap.from('.whiteLine', { scale: 0 })
         gsap.from('.landing', { opacity: 0, y: -200, ease: 'bounce' })
         gsap.from('.separator', { scale: 0 }, '-=0.5')
         gsap.from('.title', { opacity: 0, x: 30, stagger: 0.5 }, '-=0.5')
@@ -374,6 +420,7 @@
         let showprev = gsap.timeline().pause()
 
         showprev.from('.prevBtn', { opacity: 0, rotate: 45, })
+        showprev.to('.nextBtn', { opacity: 0, rotate: 45, })
         // changeSlide.from('.testimonial2', { opacity: 0, x: 30, stagger: 0.5, ease: 'elastic' })
         function nextslide() {
             showprev.play()
@@ -403,6 +450,21 @@
             document.getElementById('desig2').innerText = "Another Actor"
             document.getElementById('comment2').innerText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa, veritatis nihil odit consequuntur laboriosam perspiciatis illo iste facilis nam eveniet nesciunt sequi assumenda eius dignissimos libero deleniti dicta beatae? "
             // alert('hello')
+        }
+
+        // --------------------------------------menu---------------------------------
+        let menuAnim = gsap.timeline().pause()
+        var flag = 0
+        menuAnim
+            .from('.menuItems', { opacity: 0, x: 30, stagger: 0.1, ease: 'bounce' })
+
+        function showMenu() {
+
+            document.getElementById('menuTray').classList.toggle('hidden')
+            menuAnim.play()
+
+            // document.getElementById('upperLine').classList.toggle('rotate-45')
+            // document.getElementById('lowerLine').classList.toggle('-rotate-45')
         }
     </script>
 </body>
