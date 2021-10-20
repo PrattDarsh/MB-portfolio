@@ -1,44 +1,48 @@
-gsap.from(".header", { y: 30, opacity: 0, delay: 0.5, stagger: 0.5 });
-gsap.from(".hero", { x: 30, opacity: 0, delay: 0.5 });
-gsap.from(".progressbar", { y: 30, opacity: 0 });
-// let line = gsap.timeline().pause()
-// line.from('.line', { opacity: 0, y: 30 })
+gsap.from(".title", { opacity: 0, scale: 0 });
+gsap.from("#bottomLine", { opacity: 0, y: 30 });
+gsap.from("#dot", { opacity: 0, scale: 2 });
+gsap.from(".img1", { opacity: 0, x: 50, rotate: 45 });
 
-let tl = gsap.timeline({
-  ease: "linear",
+let pt1 = gsap.timeline({
   scrollTrigger: {
-    trigger: "#fluid",
+    trigger: ".section1",
+    start: "top bottom",
     toggleActions: "play none none pause",
-    pin: true,
-
-    scrub: 0.8,
-
-    end: "+=" + window.innerHeight * 4,
+    scrub: true,
   },
 });
 
-tl.from(".line", { opacity: 0, y: 30 })
-  .from(".point1", { opacity: 0, y: 30, stagger: 0.5 })
-  .from(".ilus1", { opacity: 0, x: 30 }, "-=1")
-  // .to(".ilus1", { opacity: 0, x: 30 }, "+=1")
-  .to(".point1", { opacity: 0, y: -200 })
-  .from(".point2", { opacity: 0, y: 30 })
-  .from(".yugen", { opacity: 0, x: -30 })
-  .from(".cls-1", { opacity: 0, y: 30, stagger: 0.5 }, "-=0.5")
-  // .from(".ilus2", { opacity: 0, x: -30 }, "-=1")
-  .to(".ilus1", { opacity: 0, x: 30 })
-  // .to(".ilus2", { opacity: 0, x: -30 }, "+=1")
-  .to(".yugen", { opacity: 0, x: 30 })
-  .to(".cls-1", { opacity: 0, x: 30 })
-  .to(".point2", { opacity: 0, y: -200 }, "-=1")
-  .to(".yg", { opacity: 0, x: 30 }, "-=0.5")
-  .from(".point3", { opacity: 0, y: 30 })
-  .from(".ilus2", { opacity: 0, x: -30 }, "-=1")
-  // .to(".ilus2", { opacity: 0, x: -30 }, "+=1")
-  // .from(".ilus3", { opacity: 0, x: -30 }, "-=1")
+pt1.from(".pt1", { opacity: 0, stagger: 0.1, scale: 0 });
 
-  .to(".point3", { opacity: 0, y: -200 })
-  .from(".point4", { opacity: 0, y: 30 });
-// .to(".ilus2", { opacity: 0, x: -30 }, "+=1");
-// .from(".ilus3", { opacity: 0, x: -30 }, "-=1");
-// .from(".ilus4", { opacity: 0, x: -30 }, "-=1");
+let pt2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section2",
+    start: "top bottom",
+    toggleActions: "play none none pause",
+    scrub: true,
+  },
+});
+pt2.from(".line", { opacity: 0 });
+pt2.from(".pt2", { opacity: 0, stagger: 0.1, scale: 0 }, "-=0.5");
+
+let pt3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section3",
+    start: "top bottom",
+    toggleActions: "play none none pause",
+    scrub: true,
+  },
+});
+
+pt3.from(".pt3", { opacity: 0, stagger: 0.1, scale: 0 });
+
+let pt4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section4",
+    start: "top bottom",
+    toggleActions: "play none none pause",
+    scrub: true,
+  },
+});
+
+pt4.from(".pt4", { opacity: 0, stagger: 0.1, scale: 0 });

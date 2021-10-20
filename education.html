@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <style>
@@ -22,111 +22,74 @@
 
 </style>
 
-<body class="bg-black">
-    <img src="images/window.svg" class="fixed max-w-sm p-12 right-56 img1" alt="">
-    <div class="flex items-center justify-center h-screen max-w-6xl py-32 mx-auto text-white text-7xl title">Education
+<body class="bg-black ">
+
+    <div class="flex items-center justify-center max-w-6xl py-32 mx-auto text-white text-7xl ">
+        <div class="fixed">
+            <div class="w-px h-96 bg-yellowGrad line"></div>
+            <div class="relative" id="bottomLine">
+                <div class="absolute p-1 bg-yellow-400 rounded-full -top-2 -left-1" id="dot"></div>
+                <div class="w-px h-72 bg-gradient-to-b from-gray-100 to gray-400"></div>
+            </div>
+
+        </div>
+        <div class="items-center justify-center md:flex">
+            <p class="title"> <span class="text-yellow-400 ephesis text-8xl">E</span>ducation</p>
+            <img src="images/window.svg" class="max-w-sm p-12 img1 " alt="">
+        </div>
+
     </div>
-    <div class="flex items-center justify-center max-w-6xl py-12 mx-auto">
+
+
+
+
+    <!-- <div class="flex items-center justify-center mx-auto">
         <div class="fixed w-px h-96 bg-yellowGrad line"></div>
         <div class="fixed bottom-2 progressbar">
-            <div class="absolute p-1 bg-yellow-400 rounded-full -top-2 -left-1" id="dot"></div>
-            <div class="w-px h-96 bg-gradient-to-b from-gray-100 to gray-400" id="bottomLine"></div>
+
         </div>
-    </div>
-    <div class="z-40 max-w-6xl py-56 mx-auto section1">
+    </div> -->
+    <div class="max-w-6xl py-56 mx-auto section1">
         <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
-        <p class="text-3xl text-center text-white pt1">MS in
+        <p class="text-3xl text-center text-yellow-400 pt1">MS in
             <i>Innovation and Entrepreneurship</i> from <span class="text-yellow-400">HEC Paris.
         </p>
-        <p class="text-xl text-center text-gray-500 pt1">HEC Paris is one of the most prestigious business schools in
+        <p class="text-2xl text-center text-white pt1">HEC Paris is one of the most prestigious business schools in
             the
             world.</p>
     </div>
     <div class="max-w-6xl py-56 mx-auto section2">
         <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
-        <p class="text-3xl text-center text-white pt2">Design
+        <p class="text-3xl text-center text-yellow-400 pt2">Design
             <i>Thinking certification</i> from <span class="text-yellow-400">Stanford d.school
         </p>
-        <p class="text-xl text-center text-gray-500 pt2">She also has a certification in this creative problem-solving
+        <p class="text-2xl text-center text-white pt2">She also has a certification in this creative problem-solving
             method from <span class="text-yellow-400">HEC Paris.</p>
 
     </div>
     <div class="max-w-6xl py-56 mx-auto section3">
         <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
-        <p class="text-3xl text-center text-white pt3">A
+        <p class="text-3xl text-center text-yellow-400 pt3">A
             <i>passionate educator</i> with a <span class="text-yellow-400">master’s</span> degree in <span
                 class="text-yellow-400">Education
         </p>
-        <p class="text-xl text-center text-gray-500 pt3">with a specialization in <span
-                class="text-yellow-400">Education
+        <p class="text-2xl text-center text-white pt3">with a specialization in <span class="text-yellow-400">Education
                 Management.</p>
 
     </div>
     <div class="max-w-6xl py-56 mx-auto section4">
         <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
-        <p class="text-3xl text-center text-white pt4">A <i>life-long learner</i>
+        <p class="text-3xl text-center text-yellow-400 pt4">A <i>life-long learner</i>
         </p>
-        <p class="text-xl text-center text-gray-500 pt4">She doesn’t think of education as something that can finish
-            which led her to complete <span class="text-yellow-400">over 45 certifications </span>(and counting)
+        <p class="text-2xl text-center text-white pt4">She doesn’t think of education as something that can finish
+            which led her to complete <br><span class="text-yellow-400">over 45 certifications </span>(and counting)
             from <span class="text-yellow-400">Coursera</span></p>
 
     </div>
     <div class="py-56"></div>
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-    <script>
-        gsap.from('.title', { opacity: 0, scale: 0 })
-        gsap.from('.progressbar', { opacity: 0, y: 30 })
-        gsap.from('.img1', { opacity: 0, x: 50, rotate: 45 })
-
-        let pt1 = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.section1',
-                start: 'top bottom',
-                toggleActions: 'play none none pause',
-                scrub: true
-            }
-        })
-
-        pt1.from('.pt1', { opacity: 0, stagger: 0.1, scale: 0 })
-
-
-        let pt2 = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.section2',
-                start: 'top bottom',
-                toggleActions: 'play none none pause',
-                scrub: true
-            }
-        })
-
-        pt2.from('.pt2', { opacity: 0, stagger: 0.1, scale: 0 })
-
-
-
-        let pt3 = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.section3',
-                start: 'top bottom',
-                toggleActions: 'play none none pause',
-                scrub: true
-            }
-        })
-
-        pt3.from('.pt3', { opacity: 0, stagger: 0.1, scale: 0 })
-
-
-        let pt4 = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.section4',
-                start: 'top bottom',
-                toggleActions: 'play none none pause',
-                scrub: true
-            }
-        })
-
-        pt4.from('.pt4', { opacity: 0, stagger: 0.1, scale: 0 })
-    </script>
+    <script src="anime.js"></script>
 </body>
 
 </html>

@@ -7,113 +7,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Engagement&family=Tillana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>Training</title>
 </head>
+<style>
+    ::-webkit-scrollbar-thumb {
+        background: #34d399;
+        box-shadow: 0 -100vh 0 100vh #34d399;
+    }
 
-<body class="bg-black">
+    .bg-yellowGrad {
+        background-image: linear-gradient(black, #34d399);
+    }
 
-    <section class="h-screen max-w-6xl mx-auto">
-        <div class="relative z-50 py-32 ml-2 top-12 compass">
-            <div class="fixed w-px h-96 bg-gradient-to-t from-red-500 to yellow-100 line"></div>
-            <div class="fixed bottom-2 progressbar">
-                <div class="absolute p-1 bg-red-500 rounded-full -top-2 -left-1"></div>
-                <div class="w-px h-96 bg-gradient-to-b from-gray-100 to gray-400"></div>
+</style>
+
+<body class="bg-black ">
+
+    <div class="flex items-center justify-center max-w-6xl py-32 mx-auto text-white text-7xl ">
+        <div class="fixed">
+            <div class="w-px h-96 bg-yellowGrad line"></div>
+            <div class="relative" id="bottomLine">
+                <div class="absolute p-1 bg-green-400 rounded-full -top-2 -left-1" id="dot"></div>
+                <div class="w-px h-72 bg-gradient-to-b from-gray-100 to gray-400"></div>
             </div>
 
         </div>
-        <div class="ml-4 md:ml-12">
-            <div class="absolute top-1/3 md:top-1/2" id="block1 ">
-                <h1 class="mb-4 text-4xl text-red-500 md:text-8xl cursive header">Corporate training</h1>
-
-            </div>
-
-    </section>
-    <section class="relative h-screen max-w-6xl mx-auto text-white " id="fluid">
-        <img src="images/smelling_flowers.png" class="absolute max-w-xs md:max-w-md bottom-12 -right-32 ilus1" alt="">
-        <img src="images/Under_tree.png" class="absolute max-w-xs md:max-w-md bottom-12 -left-56 ilus2" alt="">
-        <img src="images/sitting_at_window.png" class="absolute max-w-xs md:max-w-md bottom-12 -right-32 ilus3" alt="">
-        <!-- <img src="images/smelling_flowers.png" class="absolute max-w-xs md:max-w-md bottom-12 -right-32 ilus4" alt=""> -->
-
-
-        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point1 top-1/3 md:top-1/2">
-            <p class="">Transformative training
-            </p>
-            <p class="mt-2 text-xl text-gray-400 point1"> Training in the corporate sector can be anything but
-                traditional. With a solid background in innovation and entrepreneurship she brings an empathetic and
-                differentiated approach to training. Some of her training programmes include:
-            </p>
+        <div class="items-center justify-center md:flex">
+            <p class="text-right title"> <span class="text-green-400 ephesis text-8xl">C</span>orporate <span
+                    class="text-green-400 ephesis text-8xl">T</span>raining</p>
+            <img src="images/looking_at_sky.png" class="max-w-lg p-12 img1 " alt="">
         </div>
 
-        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point2 top-1/3 md:top-1/2">
-            <p class="">For first-time managers
-            </p>
-            <p class="mt-2 text-xl text-gray-400 point2">
-                A two-month long training/mentoring programme for first-time-managers at ABS pvt. ltd., Mumbai.
+    </div>
+
+
+
+
+    <!-- <div class="flex items-center justify-center mx-auto">
+        <div class="fixed w-px h-96 bg-yellowGrad line"></div>
+        <div class="fixed bottom-2 progressbar">
+
+        </div>
+    </div> -->
+    <div class="max-w-6xl py-56 mx-auto section1">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-center text-green-400 pt1">Transformative training
+        </p>
+        <p class="text-2xl text-center text-white pt1">Training in the corporate sector can be anything but
+            traditional. With a solid background in innovation and entrepreneurship she brings an empathetic and
+            differentiated approach to training. Some of her training programmes include:</p>
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section2">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-center text-green-400 pt2">For first-time managers
+        </p>
+        <p class="text-2xl text-center text-white pt2">A two-month long training/mentoring programme for
+            first-time-managers at ABS pvt. ltd., Mumbai.</p>
+
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section3">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-center text-green-400 pt3">Negotiation for sales team
+        </p>
+        <p class="text-2xl text-center text-white pt3">A day-long workshop on the fundamentals of negotiation with the
+            sales leadership team of ABS pvt. ltd., Mumbai.
+        </p>
+
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section4">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-center text-green-400 pt4">Design Thinking for aspiring entrepreneurs
+        </p>
+        <p class="text-2xl text-center text-white pt4">At the entrepreneur cell at NIT-Trichy.</p>
+
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section5">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <div class="items-center justify-center md:flex">
+            <img src="images/open_hands.png" class="max-w-lg pt5" alt="">
+            <p class="text-white text-7xl pt5">Webinars
             </p>
 
         </div>
 
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section6">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-center text-green-400 pt6">Well-being for corporates & entrepreneurs
 
-        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point3 top-1/3 md:top-1/2">
-            <p class="">Negotiation for sales team
-            </p>
-            <p class="mt-2 text-xl text-gray-400 point3">A day-long workshop on the fundamentals of negotiation with the
-                sales leadership team of ABS pvt. ltd., Mumbai.
+        </p>
+        <p class="text-2xl text-center text-white pt6">Online webinar on well-being at KNAV, Mumbai, for MBA students
+            at Vangaurd University, Bangalore, and for entrepreneurs from across the globe with Social Innovation
+            Booster, California.</p>
 
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section7">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-center text-green-400 pt7">Innovation and Design Thinking
 
-            </p>
-        </div>
+        </p>
+        <p class="text-2xl text-center text-white pt7">A webinar on what innovation is about and the fundamentals of
+            design thinking for over 600 participants at Sri Eshwar College of Engineering, Coimbatore.</p>
 
-        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point4 top-1/3 md:top-1/2">
-            <p class="">Design Thinking for aspiring entrepreneurs
-            </p>
-            <p class="mt-2 text-xl text-gray-400 point4">At the entrepreneur cell at NIT-Trichy.
-
-            </p>
-        </div>
-        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 top-1/3 md:top-1/2 pointX">
-            <p class="text-4xl text-red-500 cursive md:text-8xl">Webinars</p>
-        </div>
-        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point5 top-1/3 md:top-1/2">
-            <p class="">Well-being for corporates & entrepreneurs
-
-            </p>
-            <p class="mt-2 text-xl text-gray-400 point5">Online webinar on well-being at KNAV, Mumbai, for MBA students
-                at Vangaurd University, Bangalore, and for entrepreneurs from across the globe with Social Innovation
-                Booster, California.
-
-
-            </p>
-        </div>
-        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point6 top-1/3 md:top-1/2">
-            <p class="">Innovation and Design Thinking
-
-            </p>
-            <p class="mt-2 text-xl text-gray-400 point6">A webinar on what innovation is about and the fundamentals of
-                design thinking for over 600 participants at Sri Eshwar College of Engineering, Coimbatore.
-            </p>
-        </div>
-    </section>
-
-
-
+    </div>
+    <div class="py-56"></div>
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script src="anime.js"></script>
     <script>
-        tl.to('.point4', { opacity: 0, y: -200 })
-        tl.to('.ilus2', { opacity: 0, x: 30 })
-        tl.from('.pointX', { opacity: 0 })
-        tl.from('.ilus3', { opacity: 0, x: 30 }, '-=0.5')
-        tl.to('.pointX', { opacity: 0, y: -200 })
-        tl.from('.point5', { opacity: 0 })
-        tl.to('.point5', { opacity: 0, y: -200 })
-        tl.from('.point6', { opacity: 0 })
-    </script>
+        let pt5 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".section5",
+                start: "top bottom",
+                toggleActions: "play none none pause",
+                scrub: true,
+            },
+        });
 
+        pt5.from(".pt5", { opacity: 0, stagger: 0.1, rotate: 45 });
+
+        let pt6 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".section6",
+                start: "top bottom",
+                toggleActions: "play none none pause",
+                scrub: true,
+            },
+        });
+
+        pt6.from(".pt6", { opacity: 0, stagger: 0.1, scale: 0 });
+
+
+        let pt7 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".section7",
+                start: "top bottom",
+                toggleActions: "play none none pause",
+                scrub: true,
+            },
+        });
+
+        pt7.from(".pt7", { opacity: 0, stagger: 0.1, scale: 0 });
+    </script>
 </body>
 
 </html>
