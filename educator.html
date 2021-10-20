@@ -7,85 +7,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Engagement&family=Tillana&display=swap" rel="stylesheet">
-    <title>An Educator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
+<style>
+    ::-webkit-scrollbar-thumb {
+        background: #fbbf24;
+        box-shadow: 0 -100vh 0 100vh #fbbf24;
+    }
+
+    .bg-yellowGrad {
+        background-image: linear-gradient(black, #fbbf24);
+    }
+
+</style>
 
 <body class="bg-black">
-
-    <section class="h-screen max-w-6xl mx-auto">
-        <div class="relative z-50 py-32 ml-2 top-12 compass">
-            <div class="fixed w-px h-96 bg-gradient-to-t from-blue-500 to yellow-100 line"></div>
-            <div class="fixed bottom-2 progressbar">
-                <div class="absolute p-1 bg-blue-500 rounded-full -top-2 -left-1"></div>
-                <div class="w-px h-96 bg-gradient-to-b from-gray-100 to gray-400"></div>
-            </div>
-
+    <img src="images/teaching_kids.png" class="fixed max-w-xl p-12 right-56 img1" alt="">
+    <div class="flex items-center h-screen max-w-6xl py-32 mx-auto text-white text-7xl title">An Educator
+    </div>
+    <div class="flex items-center justify-start max-w-6xl py-12 mx-auto">
+        <div class="fixed w-px h-96 bg-yellowGrad line"></div>
+        <div class="fixed bottom-2 progressbar">
+            <div class="absolute p-1 bg-yellow-400 rounded-full -top-2 -left-1" id="dot"></div>
+            <div class="w-px h-96 bg-gradient-to-b from-gray-100 to gray-400" id="bottomLine"></div>
         </div>
-        <div class="ml-4 md:ml-12">
-            <div class="absolute top-1/3 md:top-1/2" id="block1 ">
-                <h1 class="mb-4 text-4xl text-blue-500 md:text-8xl cursive header">An Educator</h1>
+    </div>
+    <div class="z-40 max-w-6xl py-56 mx-auto section1">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-white pt1">As an educator
+        </p>
+        <p class="text-xl text-gray-500 pt1"> Deeply grounded in the motto of knowledge sharing and quality
+            learning for all she grabs every chance to share her knowledge with young people at different levels.</p>
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section2">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-white pt2">B-School teaching
+        </p>
+        <p class="text-xl text-gray-500 pt2">Taught Business Environment course at DoMS NALSAR University of
+            Law, Hyderabad.</p>
 
-            </div>
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section3">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-white pt3">As a rural educator
+        </p>
+        <p class="text-xl text-gray-500 pt3">She has witnessed the magic of learning with tribal and rural
+            middle school students through technology with eVidyaloka</p>
 
-    </section>
-    <section class="relative h-screen max-w-6xl mx-auto text-white " id="fluid">
-        <img src="images/brain cell-01.png" class="absolute max-w-xs md:max-w-md bottom-12 -right-32 ilus1" alt="">
-        <img src="images/open_hands.png" class="absolute max-w-xs md:max-w-lg bottom-12 -left-56 ilus2" alt="">
-        <!-- <img src="images/open_hands.png" class="absolute max-w-xs md:max-w-md bottom-12 -right-32 ilus3" alt=""> -->
-        <!-- <img src="images/smelling_flowers.png" class="absolute max-w-xs md:max-w-md bottom-12 -right-32 ilus4" alt=""> -->
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section4">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-white pt4">The KFI experience
+        </p>
+        <p class="text-xl text-gray-500 pt4">She commenced her journey in formal teaching at The School,
+            KFI, Chennai where her love for teaching was nurtured and developed.
+        </p>
 
-
-        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point1 top-1/3 md:top-1/2">
-            <p class="">As an educator
-            </p>
-            <p class="mt-2 text-xl text-gray-400 point1"> Deeply grounded in the motto of knowledge sharing and quality
-                learning for all she grabs every chance to share her knowledge with young people at different levels.
-
-            </p>
-        </div>
-
-        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point2 top-1/3 md:top-1/2">
-            <p class="">B-School teaching
-
-            </p>
-            <p class="mt-2 text-xl text-gray-400 point2">
-                Taught Business Environment course at DoMS NALSAR University of Law, Hyderabad.
-
-            </p>
-
-        </div>
-
-
-        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point3 top-1/3 md:top-1/2">
-            <p class="">As a rural educator
-
-            </p>
-            <p class="mt-2 text-xl text-gray-400 point3"> She has witnessed the magic of learning with tribal and rural
-                middle school students through technology with eVidyaloka
-
-
-            </p>
-        </div>
-
-        <div class="absolute max-w-4xl py-12 ml-4 text-4xl leading-snug text-white md:ml-12 point4 top-1/3 md:top-1/2">
-            <p class="">The KFI experience
-            </p>
-            <p class="mt-2 text-xl text-gray-400 point4"> She commenced her journey in formal teaching at The School,
-                KFI, Chennai where her love for teaching was nurtured and developed.
-
-            </p>
-        </div>
-    </section>
-
-
-
+    </div>
+    <div class="py-56"></div>
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-    <script src="anime.js"></script>
+    <script>
+        gsap.from('.title', { opacity: 0, scale: 0 })
+        gsap.from('.progressbar', { opacity: 0, y: 30 })
+        gsap.from('.img1', { opacity: 0, x: 50, rotate: 45 })
 
+        let pt1 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.section1',
+                start: 'top bottom',
+                toggleActions: 'play none none pause',
+                scrub: true
+            }
+        })
+
+        pt1.from('.pt1', { opacity: 0, stagger: 0.1, scale: 0 })
+
+
+        let pt2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.section2',
+                start: 'top bottom',
+                toggleActions: 'play none none pause',
+                scrub: true
+            }
+        })
+
+        pt2.from('.pt2', { opacity: 0, stagger: 0.1, scale: 0 })
+
+
+
+        let pt3 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.section3',
+                start: 'top bottom',
+                toggleActions: 'play none none pause',
+                scrub: true
+            }
+        })
+
+        pt3.from('.pt3', { opacity: 0, stagger: 0.1, scale: 0 })
+
+
+        let pt4 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.section4',
+                start: 'top bottom',
+                toggleActions: 'play none none pause',
+                scrub: true
+            }
+        })
+
+        pt4.from('.pt4', { opacity: 0, stagger: 0.1, scale: 0 })
+    </script>
 </body>
 
 </html>
