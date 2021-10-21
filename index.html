@@ -225,6 +225,21 @@
 
 
     </section>
+    <div class="max-w-6xl mx-auto mt-32 text-3xl text-center text-white pt5x bookDesc">Entrepreneurship is analogous to
+        steering
+        through
+        a new territory without a map. How do we find our place in this new universe? Where do we start? When do we
+        finish? How do we maneuver this space? You get into this space with a deep commitment to our idea, our
+        mission and our desire to explore. What if you find a figuring instrument that can help you sense your
+        reality better? What if you get a hold of maps and models for this difficult terrain? What if this
+        instrument holds the knowledge and experiences of many entrepreneurs, not just one?
+        <p class="mt-12 pt5x">That’s exactly what ‘In the Arena – Unleash your Entrepreneurial Spirit, Make your
+            Idea
+            a Roaring Success’
+            is about. It’s co-authored by 15 entrepreneurs from 9 countries, where the diversity it brings adds to
+            its
+            richness. <a href="" class="purple hover:underline">Click to buy this book. </a></p>
+    </div>
     <section id="section6" class="my-32">
         <div class="max-w-6xl mx-auto space-y-44 ">
             <div class="flex items-center">
@@ -410,9 +425,24 @@
         tl5.from('.img5', { opacity: 0, x: -200, rotate: -45 })
         tl5.from('.pt5', { opacity: 0, x: 100, y: 100 }, '-=0.5')
         tl5.from('.star', { opacity: 0 }, '-=0.5')
-        tl5.to('.img5', { opacity: 0, x: -200, rotate: -45, })
+        tl5.to('.img5', { y: 700, x: -200, opacity: 0.4, rotate: -45 })
         tl5.to('.star', { x: -200, rotate: 180 }, '-=0.9')
         tl5.to('.pt5', { opacity: 0, y: -30 }, '-=0.5')
+
+        // ----------------book desc----------------------------------------
+        let tl5x = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.bookDesc',
+                start: 'top center',
+                toggleActions: "play none none pause",
+                // end: '+=500'
+                // pin: true,
+                // pinSpacing: false,
+                scrub: true
+            }
+        })
+
+        tl5x.from('.pt5x', { opacity: 0, x: 30, stagger: 0.1 })
 
         // ---------------------------------------------section6 testimonial----------------------------------------
         let tl6 = gsap.timeline({
