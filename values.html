@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    ::-webkit-scrollbar-thumb {
+        background: #60a5fa;
+        box-shadow: 0 -100vh 0 100vh #60a5fa;
+    }
+
+    .bg-yellowGrad {
+        background-image: linear-gradient(black, #60a5fa);
+    }
+
+</style>
+
+<body class="bg-black ">
+
+    <div class="flex items-center justify-center max-w-6xl py-32 mx-auto text-white text-7xl ">
+        <div class="fixed z-40">
+            <div class="w-px h-96 bg-yellowGrad line"></div>
+            <div class="relative" id="bottomLine">
+                <div class="absolute p-1 bg-blue-400 rounded-full -top-2 -left-1" id="dot"></div>
+                <div class="w-px h-72 bg-gradient-to-b from-gray-100 to gray-400"></div>
+            </div>
+
+        </div>
+        <div class="items-center justify-center md:flex md:space-x-32">
+            <p class="title"> <span class="text-blue-400 ephesis text-8xl">V</span>alues</p>
+            <img src="images/Heart.png" class="max-w-md img1 " alt="">
+        </div>
+
+    </div>
+
+
+
+
+    <!-- <div class="flex items-center justify-center mx-auto">
+        <div class="fixed w-px h-96 bg-yellowGrad line"></div>
+        <div class="fixed bottom-2 progressbar">
+
+        </div>
+    </div> -->
+    <div class="max-w-6xl py-56 mx-auto section1">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-center pt1 text-white">She is fascinated by the <span class="text-blue-400">human
+                ability</span> to
+            <i>learn, adapt, and
+                change.</i>
+
+        </p>
+
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section2">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-center text-white pt2">I believe that the <span class="text-blue-400">world of the
+                future</span> is dependent on the
+            <i>new generation of thinkers.</i>
+        </p>
+
+
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section3">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-center text-white pt3">I believe in the <span class="text-blue-400">moral
+                dimension</span> of <i>technology.</i>
+
+        </p>
+
+
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section4">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-center text-white pt4">I believe that <i>life</i> is about <span
+                class="text-blue-400">shared belonging.</span>
+        </p>
+
+
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section5">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-center text-white pt5">She believes in widening the radius of <span
+                class="text-blue-400">compassion</span> and in the <span class="text-blue-400">power of mutuality.
+            </span>
+        </p>
+
+
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section6">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-center text-white pt6">She believes in <i>listening</i> to the <span
+                class="text-blue-400">inner voice</span> amid the rumble.
+        </p>
+
+
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section7">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-center text-white pt7">She believes that it is <i>necessary</i> to <span
+                class="text-blue-400">reinvent</span> oneself.
+        </p>
+
+
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section8">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-center text-white pt8">She believes that <i>learning & teaching</i> are fundamentally
+            <span class="text-blue-400">collaborative</span> processes.
+        </p>
+
+
+    </div>
+    <div class="max-w-6xl py-56 mx-auto section9">
+        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
+        <p class="text-3xl text-center text-white pt9">She lives by the motto – <span class="text-blue-400">quality
+                learning for all.</span>
+        </p>
+
+
+    </div>
+    <div class="py-56"></div>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="anime.js"></script>
+    <script>
+        let pt5 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".section5",
+                start: "top bottom",
+                toggleActions: "play none none pause",
+                scrub: true,
+            },
+        });
+
+        pt5.from(".pt5", { opacity: 0, stagger: 0.1, scale: 0 });
+
+        let pt6 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".section6",
+                start: "top bottom",
+                toggleActions: "play none none pause",
+                scrub: true,
+            },
+        });
+
+        pt6.from(".pt6", { opacity: 0, stagger: 0.1, scale: 0 });
+
+
+
+        let pt7 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".section7",
+                start: "top bottom",
+                toggleActions: "play none none pause",
+                scrub: true,
+            },
+        });
+
+        pt7.from(".pt7", { opacity: 0, stagger: 0.1, scale: 0 });
+
+        let pt8 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".section8",
+                start: "top bottom",
+                toggleActions: "play none none pause",
+                scrub: true,
+            },
+        });
+
+        pt8.from(".pt8", { opacity: 0, stagger: 0.1, scale: 0 });
+
+        let pt9 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".section9",
+                start: "top bottom",
+                toggleActions: "play none none pause",
+                scrub: true,
+            },
+        });
+
+        pt9.from(".pt9", { opacity: 0, stagger: 0.1, scale: 0 });
+    </script>
+</body>
+
+</html>
