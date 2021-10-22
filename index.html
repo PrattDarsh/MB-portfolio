@@ -406,8 +406,8 @@
                 scrub: true
             }
         })
-        tl3.from('.img3', { opacity: 0, scale: 0, rotate: -45 })
-        tl3.from('.pt3', { opacity: 0, rotate: -45 }, '-=0.5')
+        tl3.from('.img3', { x: 100, opacity: 0 })
+        tl3.from('.pt3', { x: -100, }, '-=0.5')
         tl3.from('.petal', { opacity: 0, rotate: -180, }, '-=0.5')
         tl3.to('.img3', { opacity: 0, x: 30 })
         tl3.to('.petal', { scale: 2, }, '-=0.9')
