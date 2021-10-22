@@ -46,3 +46,22 @@ let pt4 = gsap.timeline({
 });
 
 pt4.from(".pt4", { opacity: 0, stagger: 0.1, scale: 0 });
+
+// ------------MENU------------------
+gsap.from(".whiteLine", { scale: 0 });
+let menuAnim = gsap.timeline().pause();
+var flag = 0;
+menuAnim.from(".menuItems", {
+  opacity: 0,
+  x: 30,
+  stagger: 0.1,
+  ease: "bounce",
+});
+
+function showMenu() {
+  document.getElementById("menuTray").classList.toggle("hidden");
+  menuAnim.play();
+
+  // document.getElementById('upperLine').classList.toggle('rotate-45')
+  // document.getElementById('lowerLine').classList.toggle('-rotate-45')
+}
