@@ -63,10 +63,10 @@
                         <span class="ephesis purple text-8xl">M</span>eenakshi <span
                             class="ephesis purple text-8xl">B</span>abu
                     </div>
-                    <span class="text-3xl purple">( she/they )</span>
+                    <div class="text-3xl purple pronoun">( she/they )</div>
 
                 </div>
-                <div class="mt-2">
+                <div class="mt-8">
                     <div class="h-px bg-white separator"></div>
                     <div class="flex justify-end mt-4 text-2xl text-white title">In the course of becoming <a
                             href="values.html"><svg class="h-8 ml-6 text-white fill-current hover:text-indigo-600 "
@@ -381,7 +381,7 @@
         gsap.from('.landing', { opacity: 0 })
         gsap.from('.separator', { scale: 0 }, '-=0.5')
         gsap.from('.title', { opacity: 0, x: 30, stagger: 0.5 }, '-=0.5')
-
+        gsap.from('.pronoun', { opacity: 0, rotate: -45 }, '-=0.5')
 
 
         let tl = gsap.timeline({
