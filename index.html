@@ -20,7 +20,7 @@
             <div class="text-2xl text-white">Logo</div>
             <button onclick="showMenu()" class="relative" id="bars">
                 <svg xmlns="http://www.w3.org/2000/svg"
-                    class="h-8 text-white fill-current hover:text-indigo-600 transition delay-15" viewBox="0 0 24 24">
+                    class="h-8 text-white transition fill-current hover:text-indigo-600 delay-15" viewBox="0 0 24 24">
                     <path
                         d="M6 12c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z" />
                 </svg>
@@ -58,14 +58,17 @@
         <div class="items-end justify-center max-w-6xl py-32 mx-auto space-x-12 md:flex">
 
             <div class="text-right">
-                <div class="text-6xl text-white md:text-7xl title"><span
-                        class="ephesis purple text-8xl">M</span>eenakshi <span
+                <div class="text-6xl text-white md:text-7xl title">
+                    <span class="ephesis purple text-8xl">M</span>eenakshi <span
                         class="ephesis purple text-8xl">B</span>abu
                 </div>
                 <div class="mt-12">
                     <div class="h-px bg-white separator"></div>
-                    <div class="mt-4 text-2xl text-white title">A lucid realist and a positive
-                        enthusiast.</div>
+                    <div class="flex justify-end mt-4 text-2xl text-white title">In the course of becoming <a
+                            href="values.html"><svg class="h-8 ml-6 text-white fill-current hover:text-indigo-600 "
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M16 8v-4l8 8-8 8v-4h-16l8-8h8z" />
+                            </svg></a> </div>
                 </div>
 
             </div>
@@ -171,7 +174,7 @@
                     years</span> of
                 experience as an educator, including teaching at
                 <span class="italic"> B-Schools. <a href="educator.html" class="""><svg
-                            class=" h-10 mt-12 text-white fill-current pt1x hover:text-indigo-600 animate-bounce"
+                            class="h-10 mt-12 text-white fill-current  pt1x hover:text-indigo-600 animate-bounce"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path d="M16 8v-4l8 8-8 8v-4h-16l8-8h8z" />
                         </svg>
@@ -374,6 +377,7 @@
         gsap.from('.landing', { opacity: 0 })
         gsap.from('.separator', { scale: 0 }, '-=0.5')
         gsap.from('.title', { opacity: 0, x: 30, stagger: 0.5 }, '-=0.5')
+
 
 
         let tl = gsap.timeline({
