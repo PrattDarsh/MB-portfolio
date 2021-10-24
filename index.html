@@ -18,14 +18,30 @@
         <div class="flex items-center justify-between max-w-6xl py-6 mx-auto">
 
             <div class="text-2xl text-white">Logo</div>
-            <button onclick="showMenu()" class="relative" id="bars">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="h-8 text-white transition fill-current hover:text-indigo-600 delay-15" viewBox="0 0 24 24">
-                    <path
-                        d="M6 12c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z" />
-                </svg>
+            <div class="flex space-x-12">
+                <a href="mailto:meenakshi@yugen.org.in"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="hidden h-8 text-white transition fill-current md:flex hover:text-indigo-600 delay-15"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M11.99 0l-11.99 8.723v15.277h24v-15.277l-12.01-8.723zm.001 2.472l9.793 7.113-6.735 4.588-3.049-2.47-3.049 2.471-6.737-4.589 9.777-7.113zm-9.991 9.386l5.329 3.63-5.329 4.318v-7.948zm.474 10.142l9.526-7.723 9.526 7.723h-19.052zm19.526-2.194l-5.329-4.317 5.329-3.631v7.948z" />
+                    </svg></a>
+                <a href="https://www.linkedin.com/in/meenakshi-babu-84087912a/"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="hidden h-8 text-white transition fill-current md:flex hover:text-indigo-600 delay-15"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                    </svg></a>
+                <button onclick="showMenu()" class="relative" id="bars">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-8 text-white transition fill-current hover:text-indigo-600 delay-15"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M6 12c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z" />
+                    </svg>
 
-            </button>
+                </button>
+            </div>
+
 
 
         </div>
@@ -36,19 +52,6 @@
             <div class="cursor-pointer menuItems hover:text-indigo-600"><a href="training.html">Corporate Training</a>
             </div>
             <div class="cursor-pointer menuItems hover:text-indigo-600"><a href="writings.html">Writings</a></div>
-            <div class="flex items-center justify-center space-x-6 menuItems"><a
-                    href="https://www.linkedin.com/in/meenakshi-babu-84087912a/"><svg xmlns="http://www.w3.org/2000/svg"
-                        class="h-10 text-white transition fill-current hover:text-indigo-600 delay-15"
-                        viewBox="0 0 24 24">
-                        <path
-                            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                    </svg></a><a href="mailto:meenakshi@yugen.org.in"><svg xmlns="http://www.w3.org/2000/svg"
-                        class="h-10 text-white transition fill-current hover:text-indigo-600 delay-15"
-                        viewBox="0 0 24 24">
-                        <path
-                            d="M11.99 0l-11.99 8.723v15.277h24v-15.277l-12.01-8.723zm.001 2.472l9.793 7.113-6.735 4.588-3.049-2.47-3.049 2.471-6.737-4.589 9.777-7.113zm-9.991 9.386l5.329 3.63-5.329 4.318v-7.948zm.474 10.142l9.526-7.723 9.526 7.723h-19.052zm19.526-2.194l-5.329-4.317 5.329-3.631v7.948z" />
-                    </svg></a>
-            </div>
 
         </div>
 
@@ -269,76 +272,177 @@
 
     </section>
 
-    <section id="section6" class="my-32">
+    <section id="section6" class="py-32 my-32">
         <div class="max-w-6xl mx-auto space-y-44 ">
-            <div class="flex items-center">
-                <div class="w-full h-1 bg-white testimonialLine"></div>
-                <p class="text-right text-7xl purple testimonialHeader">Here's what they say</p>
 
-            </div>
-            <div class="relative">
-                <div class="absolute transform slide1 md:space-x-28 md:flex -rotate-6 testimonial">
-                    <div class=""><svg xmlns="http://www.w3.org/2000/svg" id="comma" class="fill-current h-28 purple"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                        </svg>
-                        <button
-                            class="flex items-center px-4 py-2 mt-12 space-x-2 transition transform border-2 border-white rounded-full nextBtn delay-15 group"
-                            onclick="nextslide()"><span
-                                class="text-2xl text-gray-500 group-hover:text-white">next</span><svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-10 text-gray-500 fill-current group-hover:text-indigo-600" viewBox="0 0 24 24">
-                                <path
-                                    d="M10.024 4h6.015l7.961 8-7.961 8h-6.015l7.961-8-7.961-8zm-10.024 16h6.015l7.961-8-7.961-8h-6.015l7.961 8-7.961 8z" />
-                            </svg></button>
+
+            <div class="relative h-56 max-w-4xl mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="absolute h-32 transform rotate-180 opacity-50 fill-current purple -top-20 -right-12"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+                <div class="absolute slide1 ">
+
+                    <div class="text-center text-white ">
+                        <p class="mb-8 text-4xl test1"><span class="text-5xl ephesis purple ">W</span> e felt very
+                            fortunate
+                            to have her as a speaker on Innovation and Design Thinking</p>
+                        <div class="h-px mx-auto mb-4 bg-purple w-72 line"></div>
+                        <p id="comment1" class="max-w-4xl mx-auto com1">Meenakshi Babu is such a dynamic, engaging
+                            speaker
+                            that we felt very fortunate
+                            to have her as a speaker on Innovation and Design Thinking. Her keynote presentation (“WHY
+                            INNOVATE? A Peek into Innovation and Design Thinking”) was rated by 80% of our student
+                            members as “very good to excellent.” The session truly resonated with our students and
+                            faculty members of Sri Eshwar College of Engineering and also by senior leaders of our
+                            Institute, many of whom are looking for building their products and communicating more
+                            effectively across the nation. In her very lively, energizing session, Meenakshi Babu gave
+                            them clear tips and, most importantly, actionable suggestions on how to implement these
+                            valuable strategies.</p>
+
+                        <div class="text-center auth1">
+                            <p class="mt-12 text-2xl font-bold purple" id="name1">Dr. S. Nirmala, B.E., M.E.,
+                                PhD.
+                            </p>
+                            <p class="text-lg text-gray-400" id="desig1">Dean - Academics, Sri Eshwar College of
+                                Engineering</p>
+                        </div>
+
+                        <div class="flex items-center justify-center"><button
+                                class="px-4 py-2 mt-12 space-x-2 transition transform nextBtn delay-15 group"
+                                onclick="nextslide()"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-10 text-gray-500 fill-current group-hover:text-indigo-600"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M10.024 4h6.015l7.961 8-7.961 8h-6.015l7.961-8-7.961-8zm-10.024 16h6.015l7.961-8-7.961-8h-6.015l7.961 8-7.961 8z" />
+                                </svg></button></div>
+
                     </div>
-                    <div class="text-2xl text-white">
-                        <p id="comment1">The Negotiations Workshop was totally fun, hands-on, and
-                            extremely useful for our sales team. It was a pleasure to have Meenakshi Babu with us for a
-                            day-long
-                            training on the fundamentals of negotiation. The way she kept everyone engaged throughout
-                            was
-                            fantastic. The content of the workshop was of the highest quality.</p>
-                        <div class="flex justify-end">
-                            <div class="">
-                                <p class="mt-12 text-2xl font-bold text-white" id="name1">L Balasubramanian</p>
-                                <p class="text-lg text-gray-400" id="desig1">MD, Advanced Bolting Solutions Pvt Ltd</p>
-                            </div>
 
+                </div>
+                <div class="absolute slide2 ">
+                    <div class="text-center text-white ">
+                        <p class="mb-8 text-4xl test2"><span class="text-5xl ephesis purple">T</span> he way she kept
+                            everyone
+                            engaged
+                            throughout
+                            was fantastic.</p>
+                        <div class="h-px mx-auto mb-4 bg-purple w-72 line2"></div>
+                        <p id="comment1" class="com2">The Negotiations Workshop was totally fun, hands-on,
+                            and extremely useful for
+                            our sales team. It was a pleasure to have Meenakshi Babu with us for a day-long training on
+                            the fundamentals of negotiation. The way she kept everyone engaged throughout was fantastic.
+                            The content of the workshop was of the highest quality.
+                        </p>
+
+                        <div class="text-center auth2">
+                            <p class="mt-12 text-2xl font-bold purple" id="name1">L Balasubramanian
+                            </p>
+                            <p class="text-lg text-gray-400" id="desig1">MD, Advanced Bolting Solutions Pvt Ltd
+                            </p>
+                        </div>
+
+                        <div class="flex items-center justify-center mt-12">
+                            <button class="px-4 py-2 mt-12 space-x-2 transition transform nextBtn delay-15 group"
+                                onclick="prevslide(1)"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-10 text-gray-500 transform rotate-180 fill-current group-hover:text-indigo-600"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M10.024 4h6.015l7.961 8-7.961 8h-6.015l7.961-8-7.961-8zm-10.024 16h6.015l7.961-8-7.961-8h-6.015l7.961 8-7.961 8z" />
+                                </svg></button><button
+                                class="px-4 py-2 mt-12 space-x-2 transition transform nextBtn delay-15 group"
+                                onclick="nextslide()"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-10 text-gray-500 fill-current group-hover:text-indigo-600"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M10.024 4h6.015l7.961 8-7.961 8h-6.015l7.961-8-7.961-8zm-10.024 16h6.015l7.961-8-7.961-8h-6.015l7.961 8-7.961 8z" />
+                                </svg></button>
                         </div>
 
                     </div>
 
                 </div>
-                <div class="absolute transform slide2 md:space-x-28 md:flex rotate-6 testimonial ">
-                    <div class="text-2xl text-white">
-                        <p id="comment2">We engaged Meenakshi Babu to train three of our
-                            first-time managers. It was an unconventional, customized training cum mentoring program
-                            that
-                            lasted
-                            for two months. Our managers had group and individual sessions with her. The results went
-                            through
-                            the roof with this transformative training program. We thank her for the Avant grade
-                            approach to
-                            the
-                            training she brought into our organization.</p>
 
-                        <p class="mt-12 text-2xl font-bold text-white" id="name2">Srividhya Ganesh </p>
-                        <p class="text-lg text-gray-400" id="desig2">Director and CEO, Advanced Bolting Solutions Pvt
-                            Ltd
+                <div class="absolute slide3 ">
+                    <div class="text-center text-white ">
+                        <p class="mb-8 text-4xl test3 "><span class="text-5xl ephesis purple test3">T</span>he results
+                            went
+                            through
+                            the roof with this transformative training program.</p>
+                        <div class="h-px mx-auto mb-4 bg-purple w-72 line3"></div>
+                        <p id="comment1" class="com3">We engaged Meenakshi Babu to train three of our first-time
+                            managers.
+                            It was an unconventional, customized training cum mentoring program that lasted for two
+                            months. Our managers had group and individual sessions with her. The results went through
+                            the roof with this transformative training program. We thank her for the Avant grade
+                            approach to the training she brought into our organization.
                         </p>
 
-                    </div>
-                    <div class=""><svg xmlns="http://www.w3.org/2000/svg" id="comma2"
-                            class="transform rotate-180 fill-current h-28 purple" viewBox="0 0 24 24">
-                            <path
-                                d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                        </svg>
+                        <div class="text-center auth3">
+                            <p class="mt-12 text-2xl font-bold purple" id="name1">Srividhya Ganesh
+                            </p>
+                            <p class="text-lg text-gray-400" id="desig1">Director and CEO, Advanced Bolting Solutions
+                                Pvt Ltd
+
+                            </p>
+                        </div>
+
+                        <div class="flex items-center justify-center">
+                            <button class="px-4 py-2 mt-12 space-x-2 transition transform nextBtn delay-15 group"
+                                onclick="prevslide(2)"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-10 text-gray-500 transform rotate-180 fill-current group-hover:text-indigo-600"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M10.024 4h6.015l7.961 8-7.961 8h-6.015l7.961-8-7.961-8zm-10.024 16h6.015l7.961-8-7.961-8h-6.015l7.961 8-7.961 8z" />
+                                </svg></button><button
+                                class="px-4 py-2 mt-12 space-x-2 transition transform nextBtn delay-15 group"
+                                onclick="nextslide()"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-10 text-gray-500 fill-current group-hover:text-indigo-600"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M10.024 4h6.015l7.961 8-7.961 8h-6.015l7.961-8-7.961-8zm-10.024 16h6.015l7.961-8-7.961-8h-6.015l7.961 8-7.961 8z" />
+                                </svg></button>
+                        </div>
 
                     </div>
 
                 </div>
+                <div class="absolute slide4 ">
+                    <div class="text-center text-white ">
+                        <p class="mb-8 text-4xl test4"><span class="text-5xl ephesis purple">H</span>er sessions are
+                            riveting
+                            and insightful.</p>
+                        <div class="h-px mx-auto mb-4 bg-purple w-72 line4"></div>
+                        <p id="comment1" class="">Our visiting faculty Meenakshi is a passionate teacher. She is a
+                            wonderful speaker and can handle any questions with ease. Her sessions are riveting and
+                            insightful. She does a splendid job of handling the class. I wish her all the best!
+                        </p>
+
+                        <div class="text-center com4">
+                            <p class="mt-12 text-2xl font-bold purple" id="name1">Vivek Pani Gumparthi, Ph.D. (IIM
+                                Kashipur)
+                            </p>
+                            <p class="text-lg text-gray-400" id="desig1">Marketing Faculty, DoMS NALSAR
+
+                            </p>
+                        </div>
+
+                        <div class="flex items-center justify-center">
+                            <button class="px-4 py-2 mt-12 space-x-2 transition transform nextBtn delay-15 group"
+                                onclick="prevslide(3)"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-10 text-gray-500 transform rotate-180 fill-current group-hover:text-indigo-600"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M10.024 4h6.015l7.961 8-7.961 8h-6.015l7.961-8-7.961-8zm-10.024 16h6.015l7.961-8-7.961-8h-6.015l7.961 8-7.961 8z" />
+                                </svg></button>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
 
@@ -346,33 +450,44 @@
 
         </div>
 
-        <!-- <div class="flex items-center justify-center space-x-12">
-            <button
-                class="flex items-center px-4 py-2 mt-12 space-x-2 transition transform border-2 border-white rounded-full prevBtn delay-15 group"
-                onclick="prevslide()"><svg xmlns="http://www.w3.org/2000/svg"
-                    class="h-10 text-gray-500 transform rotate-180 fill-current group-hover:text-indigo-600"
-                    viewBox="0 0 24 24">
-                    <path
-                        d="M10.024 4h6.015l7.961 8-7.961 8h-6.015l7.961-8-7.961-8zm-10.024 16h6.015l7.961-8-7.961-8h-6.015l7.961 8-7.961 8z" />
-                </svg><span class="text-2xl text-gray-500 group-hover:text-white">prev</span></button>
-            <button
-                class="flex items-center px-4 py-2 mt-12 space-x-2 transition transform border-2 border-white rounded-full nextBtn delay-15 group"
-                onclick="nextslide()"><span class="text-2xl text-gray-500 group-hover:text-white">next</span><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-10 text-gray-500 fill-current group-hover:text-indigo-600" viewBox="0 0 24 24">
-                    <path
-                        d="M10.024 4h6.015l7.961 8-7.961 8h-6.015l7.961-8-7.961-8zm-10.024 16h6.015l7.961-8-7.961-8h-6.015l7.961 8-7.961 8z" />
-                </svg></button>
-        </div> -->
-
-    </section>
-
-
-    <section id="" class="mt-32 py-72 bg-gradient-to-b from-black to-purple-500">
 
 
     </section>
 
+
+    <section id="contact" class="py-56 bg-gradient-to-b from-black to-purple-500">
+        <div class="max-w-6xl mx-auto">
+
+            <div class="flex justify-between mt-12 space-x-12">
+                <div class="">
+                    <p class="font-bold tracking-widest text-8xl cta"> Lets talk !</p>
+                    <p class="text-4xl text-white underline mail"><a
+                            href="mailto:meenakshi@yugen.org.in">meenakshi@yugen.org.in</a>
+                    </p>
+                </div>
+                <div class="flex space-x-12"><a href="https://www.linkedin.com/in/meenakshi-babu-84087912a/"><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-32 text-white fill-current icon md:flex hover:text-black " viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+                        </svg></a>
+                    <a href="tel:+919980905932"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-32 text-white fill-current icon md:flex hover:text-black " viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z" />
+                        </svg></a>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-32 text-white fill-current icon md:flex hover:text-black " viewBox="0 0 24 24">
+                            <path
+                                d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="py-32 bg-purple-500"></section>
 
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
@@ -504,46 +619,93 @@
                 scrub: true
             }
         })
-        tl6.from('.testimonialHeader', { opacity: 0, }, '-=1')
-        tl6.from('.testimonialLine', { scale: 0 }, '-=0.5')
+        tl6.from('.line', { scale: 0, }, '-=1')
+        tl6.from('.test1', { x: -100 }, '-=0.5')
+        tl6.from('.com1', { x: 100 }, '-=0.5')
+        tl6.from('.auth1', { x: -100 }, '-=0.5')
 
-        let showprev = gsap.timeline().pause()
+        let show1 = gsap.timeline().pause()
+        let show2 = gsap.timeline().pause()
+        let show3 = gsap.timeline().pause()
+        let show4 = gsap.timeline().pause()
 
-        showprev.from('.prevBtn', { opacity: 0, rotate: 45, })
-        showprev.to('.nextBtn', { opacity: 0, rotate: 45, })
-        showprev.to('.slide1', { opacity: 0, x: -30, })
-        showprev.from('.slide2', { opacity: 0, x: 30, })
-        // changeSlide.from('.testimonial2', { opacity: 0, x: 30, stagger: 0.5, ease: 'elastic' })
+
+        show1.to('.slide1', { opacity: 0, x: -30, })
+        show1.from('.slide2', { opacity: 0, x: 30, }, '-=0.2')
+        show1.from('.test2', { x: 100, opacity: 0 }, '-=0.5')
+        show1.from('.line2', { scale: 0 }, '-=0.5')
+        show1.from('.com2', { x: 100, opacity: 0 }, '-=0.5')
+        show1.from('.auth2', { x: -100, opacity: 0 }, '-=0.5')
+
+        show2.to('.slide2', { opacity: 0, x: -30, })
+        show2.from('.slide3', { opacity: 0, x: 30, }, '-=0.2')
+        show2.from('.test3', { x: -100, opacity: 0 }, '-=0.5')
+        show2.from('.line3', { scale: 0 }, '-=0.2')
+        show2.from('.com3', { x: -100, opacity: 0 }, '-=0.5')
+        show2.from('.auth3', { x: 100, opacity: 0 }, '-=0.5')
+
+        show3.to('.slide3', { opacity: 0, x: -30, })
+        show3.from('.slide4', { opacity: 0, x: 30, }, '-=0.2')
+        show3.from('.test4', { x: 100, opacity: 0 }, '-=0.5')
+        show3.from('.line4', { scale: 0 }, '-=0.2')
+        show3.from('.com4', { x: 100, opacity: 0 }, '-=0.5')
+        show3.from('.auth4', { x: -100, opacity: 0 }, '-=0.5')
+        var k = 0
         function nextslide() {
-            showprev.play()
-            // document.getElementById('comma').classList.remove('purple')
-            // document.getElementById('comma').classList.add('text-yellow-400')
-            // document.getElementById('comma2').classList.remove('purple')
-            // document.getElementById('comma2').classList.add('text-yellow-400')
-            // document.getElementById('name1').innerText = "Vivek Pani Gumparthi, Ph.D. (IIM Kashipur)"
-            // document.getElementById('desig1').innerText = "Marketing Faculty, DoMS NALSAR"
-            // document.getElementById('comment1').innerText = "Our visiting faculty Meenakshi is a passionate teacher. She is a wonderful speaker and can handle any questions with ease. Her sessions are riveting and insightful. She does a splendid job of handling the class. I wish her all the best!"
-            // document.getElementById('name2').innerText = "Dr. S. Nirmala, B.E., M.E., PhD."
-            // document.getElementById('desig2').innerText = "Dean - Academics,  Sri Eshwar College of Engineering"
-            // document.getElementById('comment2').innerText = "Meenakshi Babu is such a dynamic, engaging speaker that we felt very fortunate to have her as a speaker on Innovation and Design Thinking. Her keynote presentation (“WHY INNOVATE? A Peek into Innovation and Design Thinking”) was rated by 80% of our student members as “very good to excellent.”  The session truly resonated with our students and faculty members of Sri Eshwar College of Engineering and also by senior leaders of our Institute, many of whom are looking for building their products and communicating more effectively across the nation.  In her very lively, energizing session, Meenakshi Babu gave them clear tips and, most importantly, actionable suggestions on how to implement these valuable strategies. "
-            // alert('hello')
+            k++
+            if (k == 1) {
+                show1.play()
+                console.log(k)
+            }
+            if (k == 2) {
+                show2.play()
+                console.log(k)
+            }
+
+            if (k == 3) {
+                show3.play()
+                console.log(k)
+            }
+
+        }
+        // var p = 0
+        function prevslide(p) {
+            if (p == 1) {
+                show1.reverse()
+                k = 0
+
+
+            }
+
+            if (p == 2) {
+                show2.reverse()
+                k = 1
+
+
+            }
+
+            if (p == 3) {
+                show3.reverse()
+                k = 2
+
+            }
         }
 
-        function prevslide() {
-            showprev.reverse()
-            document.getElementById('comma').classList.add('purple')
-            document.getElementById('comma').classList.remove('text-yellow-400')
-            document.getElementById('comma2').classList.add('purple')
-            document.getElementById('comma2').classList.remove('text-yellow-400')
-            document.getElementById('name1').innerText = "L Balasubramanian"
-            document.getElementById('desig1').innerText = "MD, Advanced Bolting Solutions Pvt Ltd"
-            document.getElementById('comment1').innerText = "The Negotiations Workshop was totally fun, hands-on, and extremely useful for our sales team. It was a pleasure to have Meenakshi Babu with us for a day-long training on the fundamentals of negotiation.  The way she kept everyone engaged throughout was fantastic. The content of the workshop was of the highest quality."
-            document.getElementById('name2').innerText = "Srividhya Ganesh "
-            document.getElementById('desig2').innerText = "Director and CEO, Advanced Bolting Solutions Pvt Ltd"
-            document.getElementById('comment2').innerText = "We engaged Meenakshi Babu to train three of our first-time managers. It was an unconventional, customized training cum mentoring program that lasted for two months. Our managers had group and individual sessions with her. The results went through the roof with this transformative training program. We thank her for the Avant grade approach to the training she brought into our organization. "
-            // alert('hello')
-        }
 
+        // -----------------------------contact--------------------------------
+        let contact = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#contact',
+                start: 'top bottom',
+                toggleActions: "play none none pause",
+
+                scrub: true
+            }
+        })
+
+        contact.from('.cta', { opacity: 0, x: -100 })
+        contact.from('.mail', { opacity: 0, x: 100 }, '-=0.5')
+        contact.from('.icon', { opacity: 0, x: 100, rotate: 45, stagger: 0.1 }, '-=0.5')
         // --------------------------------------menu---------------------------------
         let menuAnim = gsap.timeline().pause()
         var flag = 0
