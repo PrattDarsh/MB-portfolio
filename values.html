@@ -94,9 +94,9 @@
 
         </div>
     </div> -->
-    <div class="max-w-6xl py-56 mx-auto section1">
-        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
-        <p class="text-3xl text-center text-white pt1">She is fascinated by the <span class="text-blue-400">human
+    <div class="relative max-w-6xl py-56 mx-auto section1">
+        <img src="images/doll.svg" class="absolute top-0 doll" alt="">
+        <p class="max-w-md text-3xl text-white pt1">She is fascinated by the <span class="text-blue-400">human
                 ability</span> to
             <i>learn, adapt, and
                 change.</i>
@@ -104,9 +104,9 @@
         </p>
 
     </div>
-    <div class="max-w-6xl py-56 mx-auto section2">
-        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
-        <p class="text-3xl text-center text-white pt2">I believe that the <span class="text-blue-400">world of the
+    <div class="relative flex justify-end max-w-6xl py-56 mx-auto section2">
+        <img src="images/tune.svg" class="absolute top-0 tune" alt="">
+        <p class="max-w-md text-3xl text-white pt2">I believe that the <span class="text-blue-400">world of the
                 future</span> is dependent on the
             <i>new generation of thinkers.</i>
         </p>
@@ -115,16 +115,16 @@
     </div>
     <div class="max-w-6xl py-56 mx-auto section3">
         <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
-        <p class="text-3xl text-center text-white pt3">I believe in the <span class="text-blue-400">moral
+        <p class="max-w-md text-3xl text-white pt3">I believe in the <span class="text-blue-400">moral
                 dimension</span> of <i>technology.</i>
 
         </p>
 
 
     </div>
-    <div class="max-w-6xl py-56 mx-auto section4">
-        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
-        <p class="text-3xl text-center text-white pt4">I believe that <i>life</i> is about <span
+    <div class="relative flex justify-end max-w-6xl py-56 mx-auto section4">
+        <img src="images/couple.svg" class="absolute top-0 left-12 couple" alt="">
+        <p class="max-w-md text-3xl text-white pt4">I believe that <i>life</i> is about <span
                 class="text-blue-400">shared belonging.</span>
         </p>
 
@@ -132,40 +132,40 @@
     </div>
     <div class="max-w-6xl py-56 mx-auto section5">
         <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
-        <p class="text-3xl text-center text-white pt5">She believes in widening the radius of <span
+        <p class="max-w-md text-3xl text-white pt5">She believes in widening the radius of <span
                 class="text-blue-400">compassion</span> and in the <span class="text-blue-400">power of mutuality.
             </span>
         </p>
 
 
     </div>
-    <div class="max-w-6xl py-56 mx-auto section6">
-        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
-        <p class="text-3xl text-center text-white pt6">She believes in <i>listening</i> to the <span
+    <div class="relative flex justify-end max-w-6xl py-56 mx-auto section6">
+        <img src="images/sunn.svg" class="absolute top-0 animate-spin sun" alt="">
+        <p class="max-w-md text-3xl text-white pt6">She believes in <i>listening</i> to the <span
                 class="text-blue-400">inner voice</span> amid the rumble.
         </p>
 
 
     </div>
-    <div class="max-w-6xl py-56 mx-auto section7">
-        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
-        <p class="text-3xl text-center text-white pt7">She believes that it is <i>necessary</i> to <span
+    <div class="relative max-w-6xl py-56 mx-auto section7">
+        <img src="images/loon.svg" class="absolute top-0 loon" alt="">
+        <p class="max-w-md text-3xl text-white pt7">She believes that it is <i>necessary</i> to <span
                 class="text-blue-400">reinvent</span> oneself.
         </p>
 
 
     </div>
-    <div class="max-w-6xl py-56 mx-auto section8">
+    <div class="flex justify-end max-w-6xl py-56 mx-auto section8">
         <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
-        <p class="text-3xl text-center text-white pt8">She believes that <i>learning & teaching</i> are fundamentally
+        <p class="max-w-md text-3xl text-white pt8">She believes that <i>learning & teaching</i> are fundamentally
             <span class="text-blue-400">collaborative</span> processes.
         </p>
 
 
     </div>
-    <div class="max-w-6xl py-56 mx-auto section9">
-        <!-- <img src="images/sitting_at_window.png" class="max-w-lg" alt=""> -->
-        <p class="text-3xl text-center text-white pt9">She lives by the motto – <span class="text-blue-400">quality
+    <div class="relative max-w-6xl py-56 mx-auto section9">
+        <img src="images/diamond.svg" class="absolute top-0 animate-pulse diamond" alt="">
+        <p class="max-w-md text-3xl text-white pt9">She lives by the motto – <span class="text-blue-400">quality
                 learning for all.</span>
         </p>
 
@@ -184,13 +184,14 @@
         let pt1 = gsap.timeline({
             scrollTrigger: {
                 trigger: ".section1",
-                start: "top bottom",
+                start: "top center",
                 toggleActions: "play none none pause",
                 scrub: true,
             },
         });
 
-        pt1.from(".pt1", { opacity: 0, x: 200, });
+        pt1.from(".pt1", { opacity: 0, x: 100, });
+        pt1.from(".doll", { opacity: 0, rotate: 60, scale: 0, x: -100 }, '-=0.5');
 
         let pt2 = gsap.timeline({
             scrollTrigger: {
@@ -202,7 +203,8 @@
         });
         pt2.from(".line", { opacity: 0 });
         pt2.from(".pt2", { opacity: 0, x: -200 }, "-=0.5");
-
+        pt2.from(".tune", { opacity: 0, rotate: 180 }, "-=0.5");
+        pt2.to(".tune", { y: 400, rotate: 45 },);
         let pt3 = gsap.timeline({
             scrollTrigger: {
                 trigger: ".section3",
@@ -224,6 +226,8 @@
         });
 
         pt4.from(".pt4", { opacity: 0, x: -200 });
+        pt4.from(".couple", { scale: 10, opacity: 0 }, "-=0.5");
+        pt4.to(".couple", { x: 400, y: 400, rotate: 45 },);
 
         // ------------MENU------------------
         gsap.from(".whiteLine", { scale: 0 });
@@ -268,6 +272,8 @@
 
 
 
+
+
         let pt7 = gsap.timeline({
             scrollTrigger: {
                 trigger: ".section7",
@@ -278,6 +284,8 @@
         });
 
         pt7.from(".pt7", { opacity: 0, x: 200 });
+        pt7.from(".loon", { opacity: 0 }, "-=0.5");
+        pt7.to(".loon", { y: 400, rotate: -30 },);
 
         let pt8 = gsap.timeline({
             scrollTrigger: {
