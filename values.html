@@ -26,20 +26,30 @@
     <div class="fixed z-50 w-full bg-black">
         <div class="flex items-center justify-between max-w-6xl py-6 mx-auto">
             <button onclick="javascript:history.back(1)"> <svg xmlns="http://www.w3.org/2000/svg"
-                    class="h-8 text-white transition transform rotate-180 fill-current hover:text-indigo-600 delay-15"
+                    class="h-6 text-white transition transform rotate-180 fill-current hover:text-indigo-600 delay-15"
                     viewBox="0 0 24 24">
                     <path
                         d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
                 </svg></button>
             <div class="text-2xl text-white">Logo</div>
-            <button onclick="showMenu()" class="relative" id="bars">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="h-8 text-white transition fill-current hover:text-indigo-600 delay-15" viewBox="0 0 24 24">
-                    <path
-                        d="M6 12c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z" />
-                </svg>
+            <div class="flex space-x-6">
+                <a href="mailto:meenakshi@yugen.org.in"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="hidden h-6 text-white transition fill-current md:flex hover:text-indigo-600 delay-15"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M11.99 0l-11.99 8.723v15.277h24v-15.277l-12.01-8.723zm.001 2.472l9.793 7.113-6.735 4.588-3.049-2.47-3.049 2.471-6.737-4.589 9.777-7.113zm-9.991 9.386l5.329 3.63-5.329 4.318v-7.948zm.474 10.142l9.526-7.723 9.526 7.723h-19.052zm19.526-2.194l-5.329-4.317 5.329-3.631v7.948z" />
+                    </svg></a>
+                <button onclick="showMenu()" class="relative" id="bars">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-8 text-white transition fill-current hover:text-indigo-600 delay-15"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M6 12c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z" />
+                    </svg>
 
-            </button>
+                </button>
+            </div>
+
 
 
         </div>
