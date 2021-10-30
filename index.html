@@ -509,12 +509,12 @@
             }
         })
         tl.from('.img1', { opacity: 0, rotate: -45 })
-        tl.from('.pt1', { opacity: 0, x: 30 }, '-=0.5')
-        tl.from('.circle', { opacity: 0, x: 30, rotate: 45 }, '-=0.2')
-        tl.from('.pt1x', { opacity: 0, x: 30 }, '-=0.3')
+        tl.from('.pt1', { opacity: 0, x: 100 }, '-=0.5')
+        tl.from('.circle', { opacity: 0, x: 100, rotate: 45 }, '-=0.2')
+        tl.from('.pt1x', { opacity: 0, x: 100 }, '-=0.3')
 
-        tl.to('.img1', { opacity: 0, x: -30 })
-        tl.to('.pt1', { opacity: 0, y: -30 }, '-=0.5')
+        tl.to('.img1', { opacity: 0, x: -100 })
+        tl.to('.pt1', { opacity: 0, y: -100 }, '-=0.5')
 
         // ---------------------------------------------section2----------------------------------------
         let tl2 = gsap.timeline({
@@ -530,14 +530,14 @@
         })
         tl2.from('.img2', { opacity: 0, scale: 0, rotate: 45, onStart: () => yugen.play() })
         tl2.from('.pt2', { opacity: 0, scale: 0.5 }, '-=0.5')
-        tl2.from('.dandy', { opacity: 0, x: -30, rotate: 45 }, '-=0.2')
+        tl2.from('.dandy', { opacity: 0, x: -100, rotate: 45 }, '-=0.2')
         if (navigator.userAgent.toLowerCase().match(/mobile/i)) { tl2.to('.img2', { opacity: 0 }) } else { tl2.to('.img2', { opacity: 0, scale: 3, }) }
         tl2.to('.img2', { opacity: 0, scale: 3, })
         tl2.to('.dandy', { x: 200 }, '-=0.9')
-        tl2.to('.pt2', { opacity: 0, y: -30 }, '-=0.5')
+        tl2.to('.pt2', { opacity: 0, y: -100 }, '-=0.5')
 
         let yugen = gsap.timeline().pause()
-        yugen.from('.cls-1', { opacity: 0, y: 30, stagger: 0.1 })
+        yugen.from('.cls-1', { opacity: 0, y: 100, stagger: 0.1 })
         // ---------------------------------------------section3----------------------------------------
         let tl3 = gsap.timeline({
             scrollTrigger: {
@@ -550,12 +550,12 @@
                 scrub: true
             }
         })
-        tl3.from('.img3', { x: 30, opacity: 0 })
-        tl3.from('.pt3', { x: -30, }, '-=0.5')
+        tl3.from('.img3', { x: 100, opacity: 0 })
+        tl3.from('.pt3', { x: -100, }, '-=0.5')
         tl3.from('.petal', { opacity: 0, rotate: -180, }, '-=0.5')
-        tl3.to('.img3', { opacity: 0, x: 30 })
+        tl3.to('.img3', { opacity: 0, x: 100 })
         tl3.to('.petal', { scale: 2, }, '-=0.9')
-        tl3.to('.pt3', { opacity: 0, y: -30 }, '-=0.5')
+        tl3.to('.pt3', { opacity: 0, y: -100 }, '-=0.5')
         // ---------------------------------------------section4----------------------------------------
         let tl4 = gsap.timeline({
             scrollTrigger: {
@@ -568,12 +568,12 @@
                 scrub: true
             }
         })
-        tl4.from('.img4', { opacity: 0, x: -30, ease: 'elastic' })
+        tl4.from('.img4', { opacity: 0, x: -100, ease: 'elastic' })
         tl4.from('.fly', { opacity: 0 }, '-=0.5')
-        tl4.from('.pt4', { opacity: 0, x: -30 }, '-=0.5')
+        tl4.from('.pt4', { opacity: 0, x: -100 }, '-=0.5')
         tl4.to('.fly', { x: -200, y: -150 }, '-=0.2')
-        tl4.to('.img4', { opacity: 0, x: 30 })
-        tl4.to('.pt4', { opacity: 0, y: -30 }, '-=0.5')
+        tl4.to('.img4', { opacity: 0, x: 100 })
+        tl4.to('.pt4', { opacity: 0, y: -100 }, '-=0.5')
         // ---------------------------------------------section5----------------------------------------
         let tl5 = gsap.timeline({
             scrollTrigger: {
@@ -587,11 +587,11 @@
             }
         })
         tl5.from('.img5', { opacity: 0, x: -200, rotate: -45 })
-        tl5.from('.pt5', { opacity: 0, x: 30, stagger: 0.1 }, '-=0.5')
+        tl5.from('.pt5', { opacity: 0, x: 100, stagger: 0.1 }, '-=0.5')
         tl5.from('.star', { opacity: 0 }, '-=0.5')
         tl5.to('.img5', { x: -200, opacity: 0, rotate: -45 })
         tl5.to('.star', { x: -200, rotate: 180 }, '-=0.9')
-        tl5.to('.pt5', { opacity: 0, y: -30 }, '-=0.5')
+        tl5.to('.pt5', { opacity: 0, y: -100 }, '-=0.5')
 
         // ----------------book desc----------------------------------------
         let tl5x = gsap.timeline({
@@ -606,7 +606,7 @@
             }
         })
 
-        tl5x.from('.pt5x', { opacity: 0, x: 30, stagger: 0.1 })
+        tl5x.from('.pt5x', { opacity: 0, x: 100, stagger: 0.1 })
 
         // ---------------------------------------------section6 testimonial----------------------------------------
         let tl6 = gsap.timeline({
@@ -621,10 +621,10 @@
             }
         })
         tl6.from('.line', { scale: 0, }, '-=1')
-        tl6.from('.test1', { x: -30 }, '-=0.5')
+        tl6.from('.test1', { x: -100 }, '-=0.5')
         tl6.from('.quote', { scale: 0 }, '-=0.5')
-        tl6.from('.com1', { x: 30 }, '-=0.5')
-        tl6.from('.auth1', { x: -30 }, '-=0.5')
+        tl6.from('.com1', { x: 100 }, '-=0.5')
+        tl6.from('.auth1', { x: -100 }, '-=0.5')
 
         let show1 = gsap.timeline().pause()
         let show2 = gsap.timeline().pause()
@@ -632,26 +632,26 @@
         let show4 = gsap.timeline().pause()
 
 
-        show1.to('.slide1', { opacity: 0, y: -30, })
-        show1.from('.slide2', { opacity: 0, y: 30, }, '-=0.2')
-        show1.from('.test2', { y: 30, opacity: 0 }, '-=0.5')
+        show1.to('.slide1', { opacity: 0, y: -100, })
+        show1.from('.slide2', { opacity: 0, y: 100, }, '-=0.2')
+        show1.from('.test2', { y: 100, opacity: 0 }, '-=0.5')
         show1.from('.line2', { scale: 0 }, '-=0.5')
-        show1.from('.com2', { y: 30, opacity: 0 }, '-=0.5')
-        show1.from('.auth2', { y: -30, opacity: 0 }, '-=0.5')
+        show1.from('.com2', { y: 100, opacity: 0 }, '-=0.5')
+        show1.from('.auth2', { y: -100, opacity: 0 }, '-=0.5')
 
-        show2.to('.slide2', { opacity: 0, y: -30, })
-        show2.from('.slide3', { opacity: 0, y: 30, }, '-=0.2')
+        show2.to('.slide2', { opacity: 0, y: -100, })
+        show2.from('.slide3', { opacity: 0, y: 100, }, '-=0.2')
         show2.from('.test3', { y: -30, opacity: 0 }, '-=0.5')
         show2.from('.line3', { scale: 0 }, '-=0.2')
-        show2.from('.com3', { y: -30, opacity: 0 }, '-=0.5')
-        show2.from('.auth3', { y: 30, opacity: 0 }, '-=0.5')
+        show2.from('.com3', { y: -100, opacity: 0 }, '-=0.5')
+        show2.from('.auth3', { y: 100, opacity: 0 }, '-=0.5')
 
-        show3.to('.slide3', { opacity: 0, y: -30, })
-        show3.from('.slide4', { opacity: 0, y: 30, }, '-=0.2')
-        show3.from('.test4', { y: 30, opacity: 0 }, '-=0.5')
+        show3.to('.slide3', { opacity: 0, y: -100, })
+        show3.from('.slide4', { opacity: 0, y: 100, }, '-=0.2')
+        show3.from('.test4', { y: 100, opacity: 0 }, '-=0.5')
         show3.from('.line4', { scale: 0 }, '-=0.5')
-        show3.from('.com4', { y: 30, opacity: 0 }, '-=0.5')
-        show3.from('.auth4', { y: -30, opacity: 0 }, '-=0.5')
+        show3.from('.com4', { y: 100, opacity: 0 }, '-=0.5')
+        show3.from('.auth4', { y: -100, opacity: 0 }, '-=0.5')
         var k = 0
         function nextslide() {
             k++
