@@ -23,6 +23,8 @@
 </style>
 
 <body class="bg-black ">
+    <div class="cursor z-50 fixed top-0 left-0 p-2 rounded-full bg-white"></div>
+    <div class="follower z-40 fixed top-0 left-0 p-4 rounded-full bg-blue-400"></div>
     <div class="fixed z-50 w-full bg-black">
         <div class="flex items-center justify-between max-w-6xl py-6 mx-auto">
             <button onclick="javascript:history.back(1)"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -182,6 +184,18 @@
         gsap.from("#bottomLine", { opacity: 0, y: 30 });
         gsap.from("#dot", { opacity: 0, scale: 2 });
         gsap.from(".img1", { opacity: 0, x: 50, rotate: 45 });
+
+
+        gsap.set('.follower', { xPercent: -50, yPercent: -50 })
+        gsap.set('.cursor', { xPercent: -50, yPercent: -50 })
+
+        var follow = document.querySelector('.follower')
+        var cur = document.querySelector('.cursor')
+
+        window.addEventListener('mousemove', e => {
+            gsap.to(cur, 0.2, { x: e.clientX, y: e.clientY })
+            gsap.to(follow, 0.9, { x: e.clientX, y: e.clientY })
+        })
 
         // ------------MENU------------------
         gsap.from(".whiteLine", { scale: 0 });

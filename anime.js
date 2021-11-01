@@ -3,6 +3,14 @@ gsap.from("#bottomLine", { opacity: 0, y: 30 });
 gsap.from("#dot", { opacity: 0, scale: 2 });
 gsap.from(".img1", { opacity: 0, x: 50, rotate: 45 });
 
+var follow = document.querySelector(".follower");
+var cur = document.querySelector(".cursor");
+
+window.addEventListener("mousemove", (e) => {
+  gsap.to(cur, 0.2, { x: e.clientX, y: e.clientY });
+  gsap.to(follow, 0.9, { x: e.clientX, y: e.clientY });
+});
+
 let pt1 = gsap.timeline({
   scrollTrigger: {
     trigger: ".section1",
