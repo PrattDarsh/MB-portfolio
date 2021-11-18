@@ -799,8 +799,8 @@
         let hideCursor = gsap.timeline().pause()
 
 
-        hideCursor.to('.cursor', { scale: 0 })
-        hideCursor.to('.follower', { scale: 0 })
+        hideCursor.to('.cursor', { scale: 0, duration: 0.3 })
+        hideCursor.to('.follower', { scale: 0, duration: 0.3 })
 
         function removeCursor() {
             hideCursor.play()
