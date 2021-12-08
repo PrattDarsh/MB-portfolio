@@ -190,7 +190,7 @@
     <section id="section3">
 
         <div class="relative items-center justify-center max-w-6xl mx-auto md:flex">
-            <img src="images/cube.png" class="absolute bottom-0 hidden h-24  right-32 petal md:block" alt="">
+            <img src="images/cube.png" class="absolute bottom-0 hidden h-24 bottom-32 right-32 petal md:block" alt="">
             <div class="max-w-xs mx-auto md:max-w-md img3"><img src="images/brain cell-01.png" alt=""></div>
             <div class="px-4 text-left text-white text-md md:text-md md:text-3xl pt3">Has <span
                     class="font-bold purple">over
@@ -639,8 +639,9 @@
         tl3.from('.pt3', { x: -100, opacity: 0 }, '-=0.5')
         tl3.from('.petal', { opacity: 0, rotate: -180, }, '-=0.5')
         tl3.to('.img3', { opacity: 0, x: 100 })
-        tl3.to('.petal', { scale: 2, }, '-=0.9')
+        tl3.to('.petal', { scale: 2, x: -100 }, '-=0.9')
         tl3.to('.pt3', { opacity: 0, y: -100 }, '-=0.5')
+        // tl3.to('.petal', { y: 30, rotate: 180 }, '-=0.9')
         // ---------------------------------------------section4----------------------------------------
         let tl4 = gsap.timeline({
             scrollTrigger: {
