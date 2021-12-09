@@ -20,7 +20,7 @@ let pt1 = gsap.timeline({
   },
 });
 
-pt1.from(".pt1", { opacity: 0, stagger: 0.1, scale: 0 });
+pt1.from(".pt1", { opacity: 0, stagger: 0.1, scale: 0 }, "-=1");
 
 let pt2 = gsap.timeline({
   scrollTrigger: {
@@ -31,7 +31,7 @@ let pt2 = gsap.timeline({
   },
 });
 pt2.from(".line", { opacity: 0 });
-pt2.from(".pt2", { opacity: 0, stagger: 0.1, scale: 0 }, "-=0.5");
+pt2.from(".pt2", { opacity: 0, stagger: 0.1, scale: 0 }, "-=1");
 
 let pt3 = gsap.timeline({
   scrollTrigger: {
@@ -42,7 +42,7 @@ let pt3 = gsap.timeline({
   },
 });
 
-pt3.from(".pt3", { opacity: 0, stagger: 0.1, scale: 0 });
+pt3.from(".pt3", { opacity: 0, stagger: 0.1, scale: 0 }, "-=1");
 
 let pt4 = gsap.timeline({
   scrollTrigger: {
@@ -53,7 +53,7 @@ let pt4 = gsap.timeline({
   },
 });
 
-pt4.from(".pt4", { opacity: 0, stagger: 0.1, scale: 0 });
+pt4.from(".pt4", { opacity: 0, stagger: 0.1, scale: 0 }, "-=1");
 
 // ------------MENU------------------
 gsap.from(".whiteLine", { scale: 0 });
