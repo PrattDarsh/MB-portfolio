@@ -551,7 +551,7 @@
                 toggleActions: "play none none pause",
                 // end: '+=500'
 
-                scrub: true
+                scrub: 1
             }
         })
         tl.from('.img1', { opacity: 0, rotate: -45 })
@@ -571,7 +571,7 @@
                 // end: '+=500'
                 // pin: true,
                 // pinSpacing: false,
-                scrub: true
+                scrub: 1
             }
         })
         tl2.from('.img2', { opacity: 0, scale: 0, rotate: 45, onStart: () => yugen.play() })
@@ -593,7 +593,7 @@
                 // end: '+=500'
                 // pin: true,
                 // pinSpacing: false,
-                scrub: true
+                scrub: 1
             }
         })
         tl3.from('.img3', { x: 100, opacity: 0 })
@@ -612,7 +612,7 @@
                 // end: '+=500'
                 // pin: true,
                 // pinSpacing: false,
-                scrub: true
+                scrub: 1
             }
         })
         tl4.from('.img4', { opacity: 0, x: -100, ease: 'elastic' })
@@ -630,7 +630,7 @@
                 // end: '+=500'
                 // pin: true,
                 // pinSpacing: false,
-                scrub: true
+                scrub: 1
             }
         })
         tl5.from('.img5', { opacity: 0, x: -200, rotate: -45 })
@@ -649,7 +649,7 @@
                 // end: '+=500'
                 // pin: true,
                 // pinSpacing: false,
-                scrub: true
+                scrub: 1
             }
         })
 
@@ -673,7 +673,7 @@
                 // end: '+=500'
                 // pin: true,
                 // pinSpacing: false,
-                // scrub: true
+                // scrub: 1
             }
         })
         // tl6.from('.line', { scale: 0, }, '-=1')
@@ -768,7 +768,7 @@
         let sect7 = gsap.timeline({
             scrollTrigger: {
                 trigger: '#section7',
-                scrub: true,
+                scrub: 1,
                 toggleActions: "play none none pause",
                 start: 'top bottom',
 
