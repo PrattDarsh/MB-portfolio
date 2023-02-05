@@ -423,6 +423,49 @@
                     </div>
 
                 </div>
+                <!-- ------------------TODO-------------------------- -->
+                <div class="absolute px-4 slide5" onmouseover="stop()" onmouseleave="play()">
+                    <div class="text-center text-white md:flex space-x-4 relative">
+                        <div class=""><img src="images/hr_summit.jpeg" class="w-56 md:w-full mx-auto mb-4" alt=""></div>
+                        <div class="test5">
+                            <p>
+                                Panel 2 witnessed the discussion on 'Data is the new currency when it comes to
+                                workforce'.It was moderated by Prof. Manojit Chattopadhyay, Associate Professor - IT &
+                                Systems, Indian Institute of Management Raipur.</p>
+                            <p>Mr. Satish Rajarathnam, SVP HR & Head Talent Transformation, Mphasis highlighted that the
+                                world thrives on data. Ms. Shirin Sehgal, Indian Region Head, HR, Moody's Corporation
+                                said that Data exhibits facts of history. A company makes money through data by
+                                leveraging the talent of the workforce. Ms. Meenakshi Babu, Founder, Yugen Education
+                                Foundation stated that data costs time, money and resources. Data is based on needs. The
+                                reliability of the data depends on its verifiability.</p>
+
+
+                        </div>
+                        <!-- <p class="mb-8 text-4xl test5"><span class="text-5xl text-yellow-400 ephesis">H</span>er
+                            sessions are
+                            riveting
+                            and insightful.</p>
+                        <div class="h-px mx-auto mb-4 bg-text-yellow-400 w-72 line5"></div>
+                        <p id="comment1" class="">Our visiting faculty Meenakshi is a passionate teacher. She is a
+                            wonderful speaker and can handle any questions with ease. Her sessions are riveting and
+                            insightful. She does a splendid job of handling the class. I wish her all the best!
+                        </p>-->
+
+
+
+
+
+                    </div>
+                    <div class="text-center com5">
+                        <p class="mt-12 text-2xl font-bold text-yellow-400" id="name1">6th HR Summit 2022
+                            Kashipur
+                        </p>
+                        <p class="text-xl text-gray-400" id="desig1">Indian Institute of Management
+
+                        </p>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -707,7 +750,14 @@
         tl6.from('.test4', { x: 100, opacity: 0 }, '-=0.5')
         tl6.from('.line4', { scale: 0 }, '-=0.5')
         tl6.from('.com4', { x: 100, opacity: 0 }, '-=0.5')
-        tl6.from('.auth4', { x: -100, opacity: 0, delay: 2, onComplete: () => tl6.reverse() }, '-=0.5')
+        tl6.from('.auth4', { x: -100, opacity: 0 }, '-=0.5')
+
+        tl6.to('.slide4', { opacity: 0, x: -100, delay: 2 })
+        tl6.from('.slide5', { opacity: 0, x: 100, }, '-=0.2')
+        tl6.from('.test5', { x: 100, opacity: 0 }, '-=0.5')
+        tl6.from('.line5', { scale: 0 }, '-=0.5')
+        tl6.from('.com5', { x: 100, opacity: 0 }, '-=0.5')
+        tl6.from('.auth5', { x: -100, opacity: 0, delay: 2, onComplete: () => tl6.reverse() }, '-=0.5')
         var k = 0
         function nextslide() {
             k++
